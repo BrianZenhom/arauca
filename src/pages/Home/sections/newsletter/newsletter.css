@@ -1,0 +1,96 @@
+.newsletter_section {
+  min-height: 100vh;
+  z-index: 3;
+}
+.newsletter_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 30px;
+}
+.imgnewsletter {
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+  border-radius: 5px;
+}
+.imgnewsletter img {
+  width: 350px;
+}
+.newsletter_form-title {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.newsletter_form-title h2 {
+  font-size: clamp(1.5rem, 2vw, 2.2rem);
+  padding-bottom: 30px;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--blue-light-color),
+    var(--blue-color),
+    white,
+    var(--blue-color),
+    var(--blue-light-color)
+  );
+  animation: rotation 15s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.newsletter_form-title span {
+  font-size: clamp(1.1rem, 2vw, 1.125rem);
+  font-family: SwitzerLight;
+  text-wrap: balance;
+}
+.signup {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+  color: white;
+}
+.signup button {
+  padding: 10px 42px;
+  background: none;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  font-family: SwitzerBold;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.signup button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+.signup input {
+  border: none;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-family: SwitzerLight;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  min-width: 300px;
+}
+
+.signup input:focus {
+  border: 1px solid var(--blue-color);
+  outline: none;
+}
+.signup input:active {
+  border: 1px solid var(--blue-color);
+}
+.newsletter_form-title b {
+  font-family: SwitzerBold;
+  color: var(--primary-color);
+}
+.newsletter_form-title label {
+  margin-top: 0.5rem;
+  font-family: SwitzerRegular;
+  font-size: clamp(0.5rem, 2vw, 0.7rem);
+}
+.newsletter_form-title a {
+  font-family: SwitzerBold;
+}

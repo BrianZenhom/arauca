@@ -1,0 +1,33 @@
+#root {
+  --primary-color: #06191d;
+  --secondary-color: #ececec;
+  --accent-color: #8c1c13;
+  --secondary-accent-color: #bd1a0f;
+  --blue-color: #7d53de;
+  --blue-light-color: #7189ff;
+}
+
+/* common */
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+body {
+  background: #ececec;
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    transparent,
+    #bd1a0f,
+    #ececec,
+    #7d53de,
+    transparent
+  );
+  border-radius: 1px;
+  width: 6px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #06191d;
+}

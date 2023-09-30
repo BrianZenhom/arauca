@@ -1,0 +1,38 @@
+.footer_section {
+  background-color: white;
+}
+.footer_content {
+  padding: 4rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer_content .logoMain {
+  fill: #06191d;
+}
+.footers_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.5rem;
+  font-family: SwitzerMedium;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+.privacyterms {
+  display: flex;
+  gap: 30px;
+  margin-top: 0.5rem;
+  font-family: SwitzerMedium;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+hr {
+  width: 100%;
+}
+.socials {
+  font-family: SwitzerMedium;
+  display: flex;
+  gap: 30px;
+  padding-bottom: 1rem;
+}

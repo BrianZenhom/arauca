@@ -1,0 +1,52 @@
+:root {
+  font-family: PleinBold;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  font-smooth: always !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  scroll-snap-stop: always;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+@font-face {
+  font-family: PleinBold;
+  src: url(./assets/Plein-Bold.woff2);
+}
+@font-face {
+  font-family: PleinBlack;
+  src: url(./assets/Plein-Black.woff2);
+}
+@font-face {
+  font-family: SwitzerBold;
+  src: url(./assets/Switzer-Bold.woff2);
+}
+@font-face {
+  font-family: SwitzerExtra;
+  src: url(./assets/Switzer-Extrabold.woff2);
+}
+@font-face {
+  font-family: SwitzerLight;
+  src: url(./assets/Switzer-Light.woff2);
+}
+@font-face {
+  font-family: SwitzerMedium;
+  src: url(./assets/Switzer-Medium.woff2);
+}
+@font-face {
+  font-family: SwitzerRegular;
+  src: url(./assets/Switzer-Regular.woff2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
