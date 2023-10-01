@@ -42,16 +42,6 @@ const AccordionSection = ({
   );
 };
 
-AccordionSection.propTypes = {
-  section: PropTypes.shape({
-    question: PropTypes.string.isRequired,
-    answer: PropTypes.string.isRequired,
-  }).isRequired,
-  isActiveSection: PropTypes.bool.isRequired,
-  setActiveIndex: PropTypes.func.isRequired,
-  sectionIndex: PropTypes.number.isRequired,
-};
-
 const Accordion = ({ sections }) => {
   const [activeIndex, setActiveIndex] = useState(null);
   return (
@@ -67,15 +57,6 @@ const Accordion = ({ sections }) => {
       ))}
     </div>
   );
-};
-
-Accordion.propTypes = {
-  sections: PropTypes.arrayOf(
-    PropTypes.shape({
-      question: PropTypes.string.isRequired,
-      answer: PropTypes.string.isRequired,
-    })
-  ).isRequired,
 };
 
 export default Accordion;
