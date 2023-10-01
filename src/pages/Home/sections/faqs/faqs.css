@@ -14,7 +14,6 @@
 }
 .title h2 {
   font-family: SwitzerBold;
-  font-size: clamp(1.25rem, 5vw, 2.5rem);
   margin-bottom: 1rem;
   text-align: center;
 }

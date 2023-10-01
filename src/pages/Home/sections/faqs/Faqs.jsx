@@ -36,7 +36,7 @@ export default function Faqs() {
           <Accordion sections={data} />
         </div>
         <div className="faqs_more">
-          <h2>¿Tienes otra duda?</h2>
+          <h3>¿Tienes otra duda?</h3>
           <span>
             Nos encantaría ayudarte. Mandanos un email a consultas@arauca.eu{' '}
             <br />

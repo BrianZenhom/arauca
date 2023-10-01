@@ -17,7 +17,7 @@ export default function Home() {
         const entry = entries[0];
         setIntersecting(entry.isIntersecting);
       },
-      { root: null, rootMargin: '-92px' }
+      { root: null, rootMargin: '-62px' }
     );
 
     observer.observe(myRef.current);

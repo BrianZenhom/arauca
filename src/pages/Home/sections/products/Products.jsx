@@ -3,39 +3,40 @@ import tshirtTest from '/tshirttest2.webp';
 
 export default function Products() {
   return (
-    <div className="products_section">
-      <div className="products_content container">
-        <div className="products_card">
-          <div className="products_card-title">
-            <h4>Titulo del producto</h4>
-            <span>Descripción hyper corta del producto.</span>
+    <article className="products_section">
+      <header className="products_content container">
+        <div className="products_content-card">
+          <div className="img_box">
+            <img src={tshirtTest} alt="" />
           </div>
-          <img src={tshirtTest} alt="" />
-          <div className="products_cta">
-            <div className="button">
-              <button>AÑADIR</button>
+          <div className="content_box">
+            <div className="titleProduct">
+              <h2>Titulo</h2>
             </div>
-            <div className="talla">
-              <button>TALLES</button>
+            <div className="details">
+              <div className="size">
+                <h3>Talle:</h3>
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+                <span>XXL</span>
+              </div>
+
+              <div className="color">
+                <h3>Color:</h3>
+                <span>Negro</span>
+                <span>Blanco</span>
+              </div>
+              <div className="buttonProduct">
+                <button>
+                  <a href="#">Añadir</a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div className="products_card">
-          <div className="products_card-title">
-            <h4>Titulo del producto</h4>
-            <span>Descripción hyper corta del producto.</span>
-          </div>
-          <img src={tshirtTest} alt="" />
-          <div className="products_cta">
-            <div className="button">
-              <button>AÑADIR</button>
-            </div>
-            <div className="talla">
-              <button>TALLES</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      </header>
+    </article>
   );
 }

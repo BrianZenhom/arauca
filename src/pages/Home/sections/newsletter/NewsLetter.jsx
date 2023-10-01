@@ -4,8 +4,8 @@ import GradientBtn from './../../../../components/gradientBtn/GradientBtn';
 
 export default function NewsLetter() {
   return (
-    <div className="newsletter_section">
-      <div className="newsletter_content container">
+    <article className="newsletter_section">
+      <header className="newsletter_content container">
         <div className="imgnewsletter">
           <img src={imgtest} alt="" />
         </div>
@@ -28,7 +28,7 @@ export default function NewsLetter() {
             </label>
           </div>
         </form>
-      </div>
-    </div>
+      </header>
+    </article>
   );
 }

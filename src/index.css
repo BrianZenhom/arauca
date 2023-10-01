@@ -14,7 +14,19 @@
   text-decoration: none;
   scroll-snap-stop: always;
 }
+h1 {
+  font-size: clamp(1.25rem, 5vw, 3rem) !important;
+}
+h2 {
+  font-size: clamp(0.9rem, 5vw, 2rem) !important;
+}
+h3 {
+  font-size: clamp(0.7rem, 5vw, 1.4rem) !important;
+}
 
+span {
+  font-size: clamp(1.1rem, 2vw, 1.125rem);
+}
 p {
   margin-bottom: 1rem;
 }
@@ -49,4 +61,5 @@ p {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }

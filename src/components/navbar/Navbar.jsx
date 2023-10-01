@@ -21,13 +21,11 @@ export default function navbar({ isIntersecting }) {
             </ul>
           </div>
         </div>
-        <ul>
-          <li className="logo_wrapper container">
-            <div className="logo">
-              <LogoSVG isIntersecting={isIntersecting} />
-            </div>
-          </li>
-        </ul>
+        <li className="logo_wrapper container">
+          <div className="logo">
+            <LogoSVG isIntersecting={isIntersecting} />
+          </div>
+        </li>
       </div>
       <div className={isIntersecting ? 'UserIcons' : 'UserIcons white_li'}>
         <span>

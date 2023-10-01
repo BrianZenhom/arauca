@@ -1,5 +1,5 @@
 .navbar {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   display: flex;
   font-size: 18px;
@@ -12,8 +12,8 @@
 }
 .UserIcons {
   position: absolute;
-  top: 29px;
-  right: 30px;
+  top: 18px;
+  right: 60px;
   display: flex;
   gap: 30px;
   font-size: 20px;
@@ -25,7 +25,10 @@
 .header .links {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  transform: translateY(8px);
 }
 
 .header .linksOne {
@@ -95,16 +98,16 @@
 @keyframes scroll {
   from {
     width: 1280px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     transform: translateX(120px);
   }
 
   to {
     margin-left: 0;
     position: sticky;
-    width: 150px;
+    width: 100px;
     transform: translatex(0px);
-    transform: translateY(-25px);
+    transform: translateY(-15px);
     padding-bottom: 0;
   }
 }

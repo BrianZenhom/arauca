@@ -17,7 +17,7 @@ const AccordionSection = ({
     <div className="questions">
       <div className="accordiontitle" onClick={toggleSection}>
         <div>
-          <h2>{section.question}</h2>
+          <h3>{section.question}</h3>
         </div>
         <div
           style={
