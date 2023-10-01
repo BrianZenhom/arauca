@@ -26,9 +26,16 @@ h3 {
 
 span {
   font-size: clamp(1.1rem, 2vw, 1.125rem);
+  text-wrap: balance;
 }
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: clamp(14px, 2vw, 16px);
+  font-family: SwitzerRegular;
+  line-height: 23px;
+}
+b {
+  font-family: SwitzerBold;
 }
 @font-face {
   font-family: PleinBold;

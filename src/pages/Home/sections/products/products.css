@@ -5,23 +5,52 @@
   font-size: clamp(1.125rem, 2vw, 1.25rem);
   position: relative;
   z-index: 0;
+  justify-content: center;
+  align-items: center;
+}
+.singleCard {
+  height: 550px;
+  width: 505px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+.singleCard_content {
+  padding: 35px;
+  color: var(--primary-color);
+  text-wrap: balance;
+}
+.singleCardTitle h1 {
+  width: 100%;
+  font-size: 48px !important;
+  margin-bottom: 2.5rem;
+}
+.headline p {
+  font-size: 18px !important;
+  font-family: SwitzerMedium;
+  margin-bottom: 1rem;
 }
 .products_content {
   color: var(--secondary-color);
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: auto auto auto;
+  grid-auto-columns: 1fr;
+  max-width: 1080px;
+  justify-content: center;
   align-items: center;
   gap: 70px;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 .products_content-card {
   position: relative;
   min-width: 320px;
   min-height: 380px;
-  max-width: 400px;
-  max-height: 500px;
+  max-height: 700px;
+  height: 550px;
   border-radius: 5px;
 
   background: var(--primary-color);
@@ -100,6 +129,7 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
+  padding-top: 10px;
 }
 .size h3 {
   font-family: SwitzerLight;
@@ -107,11 +137,20 @@
 }
 .size span {
   font-family: switzerBold;
-  padding: 5px;
+  padding: 16px;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 .size span:hover {
-  color: var(--secondary-accent-color);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.884);
+  border-radius: 5px;
 }
 .color {
   display: flex;

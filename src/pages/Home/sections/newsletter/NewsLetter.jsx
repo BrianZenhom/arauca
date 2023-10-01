@@ -1,5 +1,5 @@
 import './newsletter.css';
-import imgtest from '/testimage.webp';
+import imgtest from '/tshirttest4.webp';
 import GradientBtnTwo from './../../../../components/gradientBtn2/GradientBtnTwo';
 
 export default function NewsLetter() {
