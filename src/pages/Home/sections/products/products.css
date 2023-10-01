@@ -39,11 +39,11 @@
   border-radius: inherit;
   background: conic-gradient(
     from var(--gradient-angle),
-    var(--blue-light-color),
-    var(--blue-color),
+    var(--accent-color),
+    var(--secondary-accent-color),
     white,
-    var(--blue-color),
-    var(--blue-light-color)
+    var(--secondary-accent-color),
+    var(--accent-color)
   );
   animation: rotation 10s linear infinite;
   transition: all 0.3s ease;

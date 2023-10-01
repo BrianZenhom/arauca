@@ -31,11 +31,11 @@
   z-index: -1;
   background: conic-gradient(
     from var(--gradient-angle),
-    var(--blue-light-color),
-    var(--blue-color),
+    var(--accent-color),
+    var(--secondary-accent-color),
     white,
-    var(--blue-color),
-    var(--blue-light-color)
+    var(--secondary-accent-color),
+    var(--accent-color)
   );
   border-radius: inherit;
   animation: rotation 10s linear infinite;

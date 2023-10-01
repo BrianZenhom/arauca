@@ -27,11 +27,11 @@
   padding-bottom: 30px;
   background: conic-gradient(
     from var(--gradient-angle),
-    var(--blue-light-color),
-    var(--blue-color),
+    var(--accent-color),
+    var(--secondary-accent-color),
     white,
-    var(--blue-color),
-    var(--blue-light-color)
+    var(--secondary-accent-color),
+    var(--accent-color)
   );
   animation: rotation 15s linear infinite;
   -webkit-background-clip: text;
