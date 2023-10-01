@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
-import PropTypes from 'prop-types';
 
 const AccordionSection = ({
   section,
