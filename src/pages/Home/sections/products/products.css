@@ -111,7 +111,7 @@
   cursor: pointer;
 }
 .size span:hover {
-  color: var(--blue-color);
+  color: var(--secondary-accent-color);
 }
 .color {
   display: flex;
@@ -129,7 +129,7 @@
   cursor: pointer;
 }
 .color span:hover {
-  color: var(--blue-color);
+  color: var(--secondary-accent-color);
 }
 .color {
   display: flex;
@@ -149,7 +149,7 @@
   outline: none;
   padding: 8px 42px;
   font-family: SwitzerBold;
-  background-color: var(--blue-color);
+  background-color: var(--accent-color);
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
