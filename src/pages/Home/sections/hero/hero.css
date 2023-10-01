@@ -71,9 +71,9 @@
   color: white;
 }
 .hero_section-text h1 {
-  font-family: PleinBold;
+  font-family: SwitzerExtra;
   font-size: clamp(1.3rem, 2vw, 2.5rem);
-  background: linear-gradient(#ffffff 45%, #c0c0c0);
+  background-color: white;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
