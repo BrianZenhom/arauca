@@ -19,7 +19,7 @@ export default function NewsLetter() {
 
             <div className="signup">
               <input type="email" placeholder="Ingresa tu correo" />
-              <GradientBtnTwo text="SUSCRIBIRSE" />
+              <GradientBtnTwo text="SUSCRIBIRME" />
             </div>
 
             <label>

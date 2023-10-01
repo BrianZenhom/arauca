@@ -27,6 +27,16 @@
   font-family: SwitzerMedium;
   font-size: clamp(0.8rem, 2vw, 0.9rem);
 }
+.privacyterms a {
+  color: rgb(74, 87, 87);
+  font-family: SwitzerBold;
+  text-decoration: underline;
+  text-underline-position: below;
+}
+.privacyterms a:hover {
+  color: rgb(3, 3, 3);
+  text-decoration: none;
+}
 hr {
   width: 100%;
 }
@@ -34,5 +44,28 @@ hr {
   font-family: SwitzerMedium;
   display: flex;
   gap: 30px;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+.socials1 {
+  font-size: 28px;
+  cursor: pointer;
+}
+.socials2 {
+  font-size: 28px;
+  cursor: pointer;
+}
+.socials1 a {
+  color: #06191d;
+  transition: 0.3s ease;
+}
+.socials2 a {
+  color: #06191d;
+  transition: 0.3s ease;
+}
+.socials1:hover a {
+  color: red;
+}
+.socials2:hover a {
+  color: red;
 }

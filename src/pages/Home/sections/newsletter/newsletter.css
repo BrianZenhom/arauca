@@ -76,11 +76,11 @@
 }
 
 .signup input:focus {
-  border: 1px solid red;
+  border: 1px solid gray;
   outline: none;
 }
 .signup input:active {
-  border: 1px solid red;
+  border: 1px solid gray;
 }
 .newsletter_form-title b {
   font-family: SwitzerBold;
