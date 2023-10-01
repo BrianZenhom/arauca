@@ -27,11 +27,11 @@
   padding-bottom: 30px;
   background: conic-gradient(
     from var(--gradient-angle),
-    var(--accent-color),
-    var(--secondary-accent-color),
-    white,
-    var(--secondary-accent-color),
-    var(--accent-color)
+    lightgray,
+    gray,
+    var(--primary-color),
+    gray,
+    lightgray
   );
   animation: rotation 15s linear infinite;
   -webkit-background-clip: text;
@@ -76,21 +76,22 @@
 }
 
 .signup input:focus {
-  border: 1px solid var(--blue-color);
+  border: 1px solid red;
   outline: none;
 }
 .signup input:active {
-  border: 1px solid var(--blue-color);
+  border: 1px solid red;
 }
 .newsletter_form-title b {
   font-family: SwitzerBold;
   color: var(--primary-color);
 }
 .newsletter_form-title label {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   font-family: SwitzerRegular;
   font-size: clamp(0.5rem, 2vw, 0.7rem);
 }
 .newsletter_form-title a {
   font-family: SwitzerBold;
+  color: black;
 }

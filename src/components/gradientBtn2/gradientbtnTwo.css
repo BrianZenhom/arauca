@@ -1,0 +1,55 @@
+@property --gradient-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.gradientBtn_componentTwo {
+  height: 42px;
+  width: 170px;
+  background: var(--primary-color);
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: SwitzerRegular;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.gradientBtn_componentTwo:hover {
+  background: transparent;
+  color: black;
+}
+.gradientBtn_componentTwo::before,
+.gradientBtn_componentTwo::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    lightgray,
+    gray,
+    white,
+    gray,
+    lightgray
+  );
+  border-radius: inherit;
+  animation: rotation 10s linear infinite;
+  backdrop-filter: blur(1rem);
+}
+.gradientBtn_componentTwo::after {
+  filter: blur(0.5rem);
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}

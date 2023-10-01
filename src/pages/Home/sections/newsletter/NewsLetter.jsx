@@ -1,6 +1,6 @@
 import './newsletter.css';
 import imgtest from '/testimage.webp';
-import GradientBtn from './../../../../components/gradientBtn/GradientBtn';
+import GradientBtnTwo from './../../../../components/gradientBtn2/GradientBtnTwo';
 
 export default function NewsLetter() {
   return (
@@ -19,7 +19,7 @@ export default function NewsLetter() {
 
             <div className="signup">
               <input type="email" placeholder="Ingresa tu correo" />
-              <GradientBtn text="SUSCRIBIRSE" />
+              <GradientBtnTwo text="SUSCRIBIRSE" />
             </div>
 
             <label>
