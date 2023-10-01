@@ -8,7 +8,7 @@
   height: 42px;
   width: 170px;
   background: var(--primary-color);
-  border-radius: 5px;
+  border-radius: 4px;
   font-size: 18px;
   font-family: SwitzerRegular;
   display: flex;
@@ -37,7 +37,7 @@
     gray,
     lightgray
   );
-  border-radius: inherit;
+  border-radius: 5px;
   animation: rotation 10s linear infinite;
   backdrop-filter: blur(1rem);
 }

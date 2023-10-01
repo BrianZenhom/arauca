@@ -1,12 +1,12 @@
 .newsletter_section {
-  min-height: 100vh;
+  min-height: 70vh;
   z-index: 3;
 }
 .newsletter_content {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 70vh;
   gap: 30px;
 }
 .imgnewsletter {
@@ -20,9 +20,12 @@
   border-radius: 5px;
 }
 .newsletter_form-title {
-  padding: 50px;
   display: flex;
   flex-direction: column;
+  padding-left: 30px;
+}
+.newsletter_form-title input {
+  width: 70%;
 }
 .newsletter_form-title h2 {
   font-size: clamp(1.5rem, 2vw, 2.2rem);

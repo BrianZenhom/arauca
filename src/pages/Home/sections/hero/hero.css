@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #fff;
+  background: var(--secondary-color);
   min-height: 100vh;
   font-size: clamp(1.125rem, 2vw, 1.25rem);
 }

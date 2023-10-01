@@ -1,6 +1,7 @@
 import './products.css';
 import tshirtTest from '/tshirttest2.webp';
 import tshirtTest2 from '/tshirttest3.webp';
+import tshirtTest5 from '/tshirttest5.webp';
 
 export default function Products() {
   // Temporary data
@@ -17,7 +18,7 @@ export default function Products() {
     },
     {
       Id: 3,
-      img: tshirtTest,
+      img: tshirtTest5,
       title: 'Camiseta 3',
     },
   ];
@@ -33,21 +34,22 @@ export default function Products() {
             <div className="headline">
               <p>
                 Imagina un mundo lleno de posibilidades donde ARAUCA es tu
-                pasaporte a aventuras emocionantes.
+                pasaporte de autenticidad.
               </p>
             </div>
             <span>
               <p>
-                Bienvenido a nuestro rincón especial, donde te contamos nuestra
-                historia de una manera única. Aquí no encontrarás una llamada a
-                la acción, solo una invitación a sumergirte en la narrativa.
+                Este es nuestro rincón especial, donde te contamos nuestra
+                historia de una manera única.
               </p>
-
+              <p>
+                Aquí no encontrarás una llamada a la acción, solo una invitación
+                a sumergirte en la calidad.
+              </p>
               <p>
                 Descubre la chispa de creatividad que nos impulsó a competir en
-                un mercado feroz. Aquí te revelamos lo que nos hace diferentes,
-                lo que nos hace únicos en nuestra búsqueda inquebrantable de la
-                excelencia.
+                un mercado feroz. Lo que nos hace únicos en nuestra búsqueda
+                inquebrantable de la excelencia.
               </p>
             </span>
           </div>
