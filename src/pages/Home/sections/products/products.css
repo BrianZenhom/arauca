@@ -22,12 +22,16 @@
 .singleCardTitle h1 {
   width: 100%;
   font-size: 48px !important;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 .headline p {
   font-size: 18px !important;
-  font-family: SwitzerMedium;
+  font-family: SwitzerLight;
   margin-bottom: 1rem;
+}
+.headline b {
+  font-size: 18px !important;
+  font-family: SwitzerMedium;
 }
 .products_content {
   color: var(--secondary-color);
@@ -63,7 +67,7 @@
 .products_content-card::before {
   content: '';
   position: absolute;
-  inset: -2px;
+  inset: -1px;
   z-index: -1;
   border-radius: 5px;
   background: conic-gradient(

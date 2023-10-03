@@ -33,23 +33,26 @@ export default function Products() {
             </div>
             <div className="headline">
               <p>
-                Imagina un mundo lleno de posibilidades donde ARAUCA es tu
-                pasaporte de autenticidad.
+                Llegamos para dejar huella. <b> Somos diferentes </b> y
+                vestiremos a quienes no desean ser uno mas entre la multitud, a
+                quienes tienen una <b>seguridad arrolladora</b> y que con
+                <b> pasión</b> logran todo lo que se proponen.
               </p>
             </div>
             <span>
               <p>
-                Este es nuestro rincón especial, donde te contamos nuestra
-                historia de una manera única.
+                Traemos productos con historia, fusionando <b> alta calidad </b>{' '}
+                con un compromiso firme hacia la sotenibilidad y la{' '}
+                <b>meticulosidad en cada detalle </b>.
               </p>
               <p>
-                Aquí no encontrarás una llamada a la acción, solo una invitación
-                a sumergirte en la calidad.
+                Cada nueva colleción la estarás esperando con ansias y querrás
+                quedarte con cada una de ellas.
               </p>
               <p>
-                Descubre la chispa de creatividad que nos impulsó a competir en
-                un mercado feroz. Lo que nos hace únicos en nuestra búsqueda
-                inquebrantable de la excelencia.
+                Tenemos la misión de ser el compañero de tu historia,
+                recordándote que solo <b>tú eres el autor</b>. No permitas que
+                otros definan quién eres!
               </p>
             </span>
           </div>
