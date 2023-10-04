@@ -8,59 +8,31 @@
   justify-content: center;
   align-items: center;
 }
-.singleCard {
-  height: 550px;
-  width: 505px;
-  background-color: var(--secondary-color);
-  border-radius: 5px;
-}
-.singleCard_content {
-  padding: 35px;
-  color: var(--primary-color);
-  text-wrap: balance;
-}
-.singleCardTitle h1 {
-  width: 100%;
-  font-size: 48px !important;
-  margin-bottom: 1.5rem;
-}
-.headline p {
-  font-size: 18px !important;
-  font-family: SwitzerLight;
-  margin-bottom: 1rem;
-}
-.headline b {
-  font-size: 18px !important;
-  font-family: SwitzerMedium;
-}
 .products_content {
-  color: var(--secondary-color);
-  width: 100%;
-  display: grid;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  justify-content: center; */
+  display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  grid-template-columns: 0.5fr 0.5fr;
-  grid-template-rows: auto auto auto;
-  grid-auto-columns: 1fr;
-  max-width: 1080px;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
+  gap: 40px;
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
+
+.products_content > * {
+  flex-grow: 1;
+  flex-basis: 33%;
+}
+
 .products_content-card {
   position: relative;
-  min-width: 320px;
-  min-height: 380px;
-  max-height: 700px;
-  height: 550px;
-  border-radius: 4px;
-
   background: var(--primary-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-width: 220px;
+  max-width: 550px;
+  border-radius: 4px;
+  transition: 0.3s ease;
 }
 
 .products_content-card::after,
@@ -86,17 +58,63 @@
 .products_content-card::after {
   filter: blur(1rem);
 }
-.products_section .products_content-card .img_box {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
+img {
+  overflow: hidden;
+  border-radius: 4px;
 }
 
-.img_box img {
+.image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: 4px;
+}
+.singleCard {
+  min-width: 220px;
+  max-width: 550px;
+  min-height: 402px;
+  max-height: 597.5px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+.singleCard_content {
+  color: var(--primary-color);
+  text-wrap: balance;
+}
+.singleCard_wrapper {
+  padding: 1rem;
+}
+.singleCardTitle {
+  width: 100%;
+}
+.singleCardTitle h1 {
+  white-space: nowrap;
+  margin-bottom: 1.5rem;
+}
+.headline {
+  padding: 15px;
+}
+.headline p {
+  margin-bottom: 2rem;
+  line-height: 24px !important;
+}
+.products_section .products_content-card .img_box {
+  width: 100%;
+  border-radius: 5px;
+}
+.sizeandcolor {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+  padding: 0 15px;
+  transition: 0.3s ease;
+}
+.sizes {
+  display: flex;
+}
+.colors {
+  display: flex;
 }
 .content_box {
   overflow: hidden;
@@ -114,19 +132,18 @@
   align-items: center;
   text-align: center;
   font-family: SwitzerMedium;
-  font-size: 27px !important;
+  color: white;
+  font-size: clamp(0.6rem, 2vw, 2rem);
   gap: 40px;
 }
-.details {
-  opacity: 0;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+.sizeandcolor {
+  color: white;
   transition: 0.3s ease;
   text-align: start;
 }
 .products_content-card:hover .details {
   opacity: 1;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 .size {
   display: flex;
@@ -153,7 +170,7 @@
 }
 .size span:hover {
   color: white;
-  background-color: rgba(0, 0, 0, 0.884);
+  background-color: var(--accent-color);
   border-radius: 5px;
 }
 .color {
@@ -215,10 +232,55 @@
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.342);
   backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
 }
 .products_section .products_content-card:hover .content_box {
-  height: 210px;
+  min-height: 210px;
+
+  transition: all 0.2s ease;
 }
 .products_section .products_content-card:hover .carrito {
   display: none;
+}
+.blanco {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.negro {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.blanco:hover {
+  border: 2px solid black;
+}
+.negro:hover {
+  border: 2px solid red;
+}
+
+@media (width <= 768px) {
+  .products_content {
+    display: flex;
+    flex-direction: column;
+  }
+  .headline p {
+    margin-bottom: 3rem;
+    line-height: 24px !important;
+  }
+}
+@media (width <= 428px) {
+  .singleCardTitle h1 {
+    margin-bottom: 0;
+  }
+  .headline p {
+    margin-bottom: 0.7rem;
+    line-height: 15px !important;
+  }
 }

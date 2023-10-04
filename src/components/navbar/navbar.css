@@ -47,7 +47,6 @@
   animation-timeline: scroll();
   animation-range: 0 100vh;
   cursor: pointer;
-  transition: all 0.2s ease;
 }
 
 .header .linksTwo ul {
@@ -58,7 +57,6 @@
   animation-timeline: scroll();
   animation-range: 0 100vh;
   cursor: pointer;
-  transition: all 0.2s ease;
 }
 
 .header .links li:hover {
@@ -88,11 +86,9 @@
 
 .white_li {
   color: white;
-  transition: 0.2s ease;
 }
 .fill_white {
   fill: white;
-  transition: 0.2s ease;
 }
 
 @keyframes scroll {
@@ -138,5 +134,49 @@
     box-shadow: 0 5px 50px -5px hsla(0, 0%, 100%, 0.1),
       0 0 0 1px hsla(0, 0%, 100%, 0.1);
     background: rgba(0, 0, 0, 0.349);
+  }
+}
+
+@media (320px <= width <= 768px) {
+  .linksOne {
+    display: none;
+  }
+  .linksTwo {
+    display: none;
+  }
+  .navbar {
+    height: 65px;
+  }
+  .UserIcons {
+    right: 30px;
+    gap: 20px;
+  }
+  .logo_wrapper {
+    justify-content: start;
+    transform: translateY(25px);
+  }
+}
+
+@media (width <= 428px) {
+  .links {
+    position: absolute;
+  }
+  .linksOne {
+    display: none;
+  }
+  .linksTwo {
+    display: none;
+  }
+  .navbar {
+    height: 65px;
+  }
+  .UserIcons {
+    right: 25px;
+    gap: 15px;
+  }
+  .logo_wrapper {
+    transform: translateY(7.5px);
+    height: 80px;
+    justify-content: center;
   }
 }

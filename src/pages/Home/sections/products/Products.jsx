@@ -11,6 +11,7 @@ export default function Products() {
       img: tshirtTest,
       title: 'Camiseta 1',
     },
+
     {
       Id: 2,
       img: tshirtTest2,
@@ -25,36 +26,36 @@ export default function Products() {
 
   return (
     <article className="products_section">
-      <header className="products_content ">
+      <header className="products_content container ">
         <div className="singleCard">
           <div className="singleCard_content">
-            <div className="singleCardTitle">
-              <h1>LA COLLECCION DE ARAUCA</h1>
+            <div className="singleCard_wrapper">
+              <div className="singleCardTitle">
+                <h1>¿Porque Arauca?</h1>
+              </div>
+              <div className="headline">
+                <span>
+                  <p>
+                    Somos diferentes y queremos vestir a aquellos que no desean
+                    ser uno más entre la multitud. Aquellos que tienen una
+                    seguridad arolladora y que con pasión logran todo aquello
+                    que se proponen.
+                  </p>
+                  <p>
+                    Traemos productos con historia, fusionando alta calidad con
+                    compromiso firme hacia la sostenibilidad y meticulosidad en
+                    cada detalle. Cada colección despertará tu entusiasmo y
+                    desearás adquirir cada una de ellas.
+                  </p>
+                  <p>
+                    Nuestra misión es ser el compañero de tu historia,
+                    recordándote que solo tú eres el autor.
+                    <br />
+                  </p>
+                  <b>¡No permitas que otros definan quién eres!</b>
+                </span>
+              </div>
             </div>
-            <div className="headline">
-              <p>
-                Llegamos para dejar huella. <b> Somos diferentes </b> y
-                vestiremos a quienes no desean ser uno mas entre la multitud, a
-                quienes tienen una <b>seguridad arrolladora</b> y que con
-                <b> pasión</b> logran todo lo que se proponen.
-              </p>
-            </div>
-            <span>
-              <p>
-                Traemos productos con historia, fusionando <b> alta calidad </b>{' '}
-                con un compromiso firme hacia la sotenibilidad y la{' '}
-                <b>meticulosidad en cada detalle </b>.
-              </p>
-              <p>
-                Cada nueva colleción la estarás esperando con ansias y querrás
-                quedarte con cada una de ellas.
-              </p>
-              <p>
-                Tenemos la misión de ser el compañero de tu historia,
-                recordándote que solo <b>tú eres el autor</b>. No permitas que
-                otros definan quién eres!
-              </p>
-            </span>
           </div>
         </div>
         {tshirtCollection.map((t) => {
@@ -62,15 +63,14 @@ export default function Products() {
             <>
               <div className="products_content-card">
                 <div className="img_box">
-                  <img src={t.img} alt="" />
+                  <img className="image" src={t.img} alt="" />
                 </div>
                 <div className="content_box">
                   <div className="titleProduct">
                     <h2>{t.title}</h2>
                   </div>
-                  <div className="details">
+                  <div className="sizeandcolor">
                     <div className="size">
-                      <h3>Talle:</h3>
                       <span>S</span>
                       <span>M</span>
                       <span>L</span>
@@ -79,15 +79,14 @@ export default function Products() {
                     </div>
 
                     <div className="color">
-                      <h3>Color:</h3>
-                      <span>Negro</span>
-                      <span>Blanco</span>
+                      <div className="blanco"></div>
+                      <div className="negro"></div>
                     </div>
-                    <div className="buttonProduct">
-                      <button>
-                        <a href="#">Añadir</a>
-                      </button>
-                    </div>
+                  </div>
+                  <div className="buttonProduct">
+                    <button>
+                      <a href="#">Añadir</a>
+                    </button>
                   </div>
                 </div>
               </div>

@@ -69,3 +69,11 @@ hr {
 .socials2:hover a {
   color: red;
 }
+
+@media (width <= 428px) {
+  .footers_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}

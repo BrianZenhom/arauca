@@ -15,23 +15,22 @@
   scroll-snap-stop: always;
 }
 h1 {
-  font-size: clamp(1.25rem, 5vw, 3rem) !important;
+  font-size: clamp(32px, 4vw, 64px) !important;
 }
 h2 {
-  font-size: clamp(0.9rem, 5vw, 2rem) !important;
+  font-size: clamp(21px, 4vw, 32px) !important;
 }
 h3 {
-  font-size: clamp(0.7rem, 5vw, 1.4rem) !important;
+  font-size: clamp(18px, 4vw, 1.5rem) !important;
 }
 
 span {
-  font-size: clamp(1.1rem, 2vw, 1.125rem);
+  font-size: clamp(12px, 2vw, 18px);
   text-wrap: balance;
 }
 p {
-  margin-bottom: 1rem;
-  font-size: clamp(14px, 2vw, 16px);
-  line-height: 23px;
+  margin-bottom: 0.5rem;
+  font-size: clamp(12px, 2vw, 18px);
 }
 b {
   font-family: SwitzerBold;
@@ -68,4 +67,5 @@ b {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  font-family: SwitzerBold, system-ui, sans-serif;
 }

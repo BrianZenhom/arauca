@@ -82,3 +82,30 @@
   font-family: SwitzerLight;
   text-wrap: balance;
 }
+@media (width <= 768px) {
+  .hero_section-content {
+    padding-top: 0;
+  }
+  .hero_section-text {
+    width: 60%;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  .hero_section-text h1 {
+    font-size: clamp(1.3rem, 2vw, 2.5rem);
+  }
+  .hero_section-text span {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+  }
+  .hero_section-image {
+    height: 300px;
+    min-width: 100%;
+  }
+}
+
+@media (width <= 428px) {
+  .hero_section-text {
+    position: static;
+    width: 300px;
+  }
+}
