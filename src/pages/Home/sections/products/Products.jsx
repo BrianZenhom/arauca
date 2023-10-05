@@ -1,3 +1,4 @@
+import { Euro } from '@mui/icons-material';
 import './products.css';
 import tshirtTest from '/tshirttest2.webp';
 import tshirtTest2 from '/tshirttest3.webp';
@@ -10,17 +11,20 @@ export default function Products() {
       Id: 1,
       img: tshirtTest,
       title: 'Camiseta 1',
+      price: `17,99`,
     },
 
     {
       Id: 2,
       img: tshirtTest2,
       title: 'Camiseta 2',
+      price: `12,99`,
     },
     {
       Id: 3,
       img: tshirtTest5,
       title: 'Camiseta 3',
+      price: `12,99`,
     },
   ];
 
@@ -68,6 +72,7 @@ export default function Products() {
                 <div className="content_box">
                   <div className="titleProduct">
                     <h2>{t.title}</h2>
+                    <h3>{t.price} &euro;</h3>
                   </div>
                   <div className="sizeandcolor">
                     <div className="size">

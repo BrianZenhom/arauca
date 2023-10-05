@@ -9,7 +9,7 @@
   width: 170px;
   background: var(--primary-color);
   border-radius: 4px;
-  font-size: 18px;
+  font-size: clamp(12px, 3vw, 18px);
   font-family: SwitzerRegular;
   display: flex;
   align-items: center;
@@ -51,5 +51,13 @@
   }
   100% {
     --gradient-angle: 360deg;
+  }
+}
+@media (width <= 428px) {
+  .gradientBtn_componentTwo {
+    height: 29px;
+    width: 120px;
+    background: var(--primary-color);
+    border-radius: 4px;
   }
 }
