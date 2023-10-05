@@ -286,6 +286,9 @@ img {
   }
 }
 @media (width <= 428px) {
+  .products_section .products_content-card .content_box {
+    height: 65px;
+  }
   .singleCardTitle h1 {
     margin-bottom: 0;
   }
