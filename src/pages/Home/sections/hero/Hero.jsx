@@ -6,6 +6,9 @@ const Hero = React.forwardRef((props, ref) => {
   return (
     <article ref={ref} className="hero_section">
       <main className="hero_section-content">
+        <div className="header">
+
+        </div>
         <div className="hero_section-bg">
           <div className="hero_section-image container">
             <div className="hero_section-text">
@@ -17,7 +20,7 @@ const Hero = React.forwardRef((props, ref) => {
                 </p>
               </span>
               <div className="cta">
-                <GradientBtn text="Prueba la tuya" />
+                <GradientBtn text="VER COLECCION" />
               </div>
             </div>
           </div>

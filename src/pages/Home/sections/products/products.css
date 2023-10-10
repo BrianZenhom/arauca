@@ -35,26 +35,6 @@
   transition: 0.3s ease;
 }
 
-.products_content-card::after,
-.products_content-card::before {
-  content: '';
-  position: absolute;
-  inset: -1px;
-  z-index: -1;
-  border-radius: 5px;
-  background: conic-gradient(
-    from var(--gradient-angle),
-    var(--accent-color),
-    var(--secondary-accent-color),
-    white,
-    var(--secondary-accent-color),
-    var(--accent-color)
-  );
-  animation: rotation 10s linear infinite;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(1rem);
-}
-
 .products_content-card::after {
   filter: blur(1rem);
 }

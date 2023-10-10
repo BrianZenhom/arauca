@@ -16,6 +16,7 @@
 }
 body {
   background: #ececec;
+  overscroll-behavior: none;
 }
 ::-webkit-scrollbar-thumb {
   background: white;

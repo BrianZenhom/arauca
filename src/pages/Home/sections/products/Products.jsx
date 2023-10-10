@@ -1,4 +1,3 @@
-import { Euro } from '@mui/icons-material';
 import './products.css';
 import tshirtTest from '/tshirttest2.webp';
 import tshirtTest2 from '/tshirttest3.webp';
@@ -35,7 +34,7 @@ export default function Products() {
           <div className="singleCard_content">
             <div className="singleCard_wrapper">
               <div className="singleCardTitle">
-                <h1>¿Porque Arauca?</h1>
+                <h1>¿Por qué Arauca?</h1>
               </div>
               <div className="headline">
                 <span>
