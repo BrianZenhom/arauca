@@ -4,6 +4,7 @@
   justify-content: space-between;
   background: var(--secondary-color);
   min-height: 100vh;
+  width: 100%;
   font-size: clamp(1.125rem, 2vw, 1.25rem);
 }
 .hero_section-content {

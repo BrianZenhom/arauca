@@ -16,7 +16,7 @@
 }
 body {
   background: #ececec;
-  overscroll-behavior: none;
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar-thumb {
   background: white;
