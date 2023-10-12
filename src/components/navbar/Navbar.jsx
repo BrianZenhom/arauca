@@ -9,7 +9,7 @@ export default function navbar({ isIntersecting }) {
   const [isScrolled, setIsScrolled] = useState(false)
 
   const handleScroll = () =>{
-    if(window.scrollY > 80) {
+    if(window.scrollY > 60) {
       setIsScrolled(true)
     } else {
       setIsScrolled(false)
@@ -41,13 +41,13 @@ export default function navbar({ isIntersecting }) {
             </ul>
           </div>
         </div>
-        <li className="logo_wrapper container">
+        <div className="logo_wrapper">
           <div className="logo">
             <a href="/">
             <LogoSVG isIntersecting={isIntersecting} isScrolled={isScrolled} />
             </a>
           </div>
-        </li>
+        </div>
       </div>
       <div className={isIntersecting ? 'UserIcons' : 'UserIcons white_li'}>
         <div>

@@ -68,16 +68,17 @@
   cursor: pointer;
 }
 
+
 .header .links li:hover {
   color: red;
   transition: all 0.2s ease;
 }
 
-.logo_wrapper {
+.logo{
   display: flex;
   justify-content: center;
-  align-items: center;
 }
+
 /* 
 .logoMain {
   width: 1080px;
@@ -235,13 +236,10 @@
     right: 30px;
     gap: 20px;
   }
-  .logo_wrapper{
-    position: absolute;
-    left: 0;
-    right: 0;
-    transform: translateY(25px);
-    width: 200px;
+  .logo{
+    margin-top: 25px;
   }
+  
 }
 
 @media (width <= 428px) {
@@ -261,10 +259,8 @@
     right: 25px;
     gap: 15px;
   }
-  .logo_wrapper{
-    position: absolute;
-    left: 0;
-    right: 0;
-    transform: translateY(35px);
+  .logo{
+    margin-top: 35px;
+    transform: translateX(-10px);
   }
 }

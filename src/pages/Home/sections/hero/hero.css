@@ -99,12 +99,10 @@
   }
   .hero_section-text {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     width: 60%;
     height: 100%;
-    padding-left: 0;
-    padding-top: 20px;
   }
   .hero_section-text h1 {
     font-size: clamp(1.3rem, 2vw, 2.5rem);
