@@ -28,9 +28,18 @@ export default function navbar({ isIntersecting }) {
         </li>
       </div>
       <div className={isIntersecting ? 'UserIcons' : 'UserIcons white_li'}>
-        <span>
+        <div className="dropdown">
+          <div className="login_text">
+            <span>Inicia sesion o crea tu cuenta</span>
+          </div>
+          <div className="login">
+            <input type="text" placeholder="E-mail" />
+            <input type="password" placeholder="Contraseña" />
+          </div>
+        </div>
+        <div>
           <AccountCircleIcon />
-        </span>
+        </div>
         <span>
           <ShoppingBagIcon />
         </span>
