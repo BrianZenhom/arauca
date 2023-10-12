@@ -113,12 +113,24 @@
   .hero_section-image {
     min-width: 100%;
   }
- 
+  
+  .hero_section-image{
+    padding: 0 30px;
+  }
 }
 
 @media (width <= 428px) {
   .hero_section-text {
     position: static;
     width: 300px;
+  }
+}
+
+@media (width <= 320px){
+  .hero_section-text{
+    width: 250px;
+  }
+  .hero_section-image{
+    padding: 0 30px;
   }
 }

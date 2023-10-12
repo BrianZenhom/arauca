@@ -73,10 +73,16 @@
   color: red;
   transition: all 0.2s ease;
 }
-
 .logo{
   display: flex;
   justify-content: center;
+  margin-top: 35px;
+}
+.logo_wrapper{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 /* 
@@ -148,14 +154,15 @@
 }
 
 #small{
-  width: 120px;
+  min-width: 120px;
   transition: all .6s ease;
   transform: translateY(-15px);
 }
 #big{
-  width: 1080px;
+  min-width: 1080px;
   transition: all .6s ease;
-  transform: translateX(100px);
+  transform: translateX(90px);
+
 }
 #invisible{
   opacity: 0;
@@ -236,9 +243,6 @@
     right: 30px;
     gap: 20px;
   }
-  .logo{
-    margin-top: 25px;
-  }
   
 }
 
@@ -259,8 +263,13 @@
     right: 25px;
     gap: 15px;
   }
-  .logo{
-    margin-top: 35px;
-    transform: translateX(-10px);
+ 
+}
+
+@media (width <= 320px){
+  #big{
+    min-width: 600px;
+    transition: all .6s ease;
+    transform: translateX(50px);
   }
 }
