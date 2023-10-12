@@ -30,7 +30,8 @@
 }
 .hero_section-image {
   flex-grow: 1;
-  height: 70vh;
+  min-height: 62vh;
+  max-height: 80vh;
   min-width: 1080px;
   border-radius: 10px;
   position: relative;
@@ -71,7 +72,7 @@
   top: 0;
   right: 0;
   height: 100%;
-  padding-top: 40px;
+  padding-top: 100px;
   padding-left: 20px;
   color: white;
 }
