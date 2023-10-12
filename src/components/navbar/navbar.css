@@ -244,6 +244,9 @@
     right: 30px;
     gap: 20px;
   }
+  .navbarscrolled{
+    padding-bottom: 0px;
+  }
   
 }
 
