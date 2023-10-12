@@ -240,6 +240,7 @@
     left: 0;
     right: 0;
     transform: translateY(25px);
+    width: 200px;
   }
 }
 
