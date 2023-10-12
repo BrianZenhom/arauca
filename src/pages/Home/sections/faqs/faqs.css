@@ -55,7 +55,7 @@
 }
 .accordioncontent.show {
   height: auto;
-  max-height: 100px;
+  max-height: 200px;
   transition: all 0.5s ease;
   padding-top: 15px;
   padding-bottom: 15px;
