@@ -34,7 +34,7 @@ export default function Products() {
           <div className="singleCard_content">
             <div className="singleCard_wrapper">
               <div className="singleCardTitle">
-                <h1>¿Por qué Arauca?</h1>
+                <h2>¿Por qué Arauca?</h2>
               </div>
               <div className="headline">
                 <span>
