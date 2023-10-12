@@ -187,8 +187,9 @@ img {
 .buttonProduct {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
+  margin-right: 40px;
   height: 70px;
 }
 .buttonProduct button {
@@ -196,7 +197,7 @@ img {
   outline: none;
   padding: 8px 42px;
   font-family: SwitzerBold;
-  background-color: var(--secondary-accent-color);
+  background-color: var(--blue-color);
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
@@ -206,7 +207,7 @@ img {
   color: white;
 }
 .buttonProduct button:hover {
-  background-color: var(--primary-color);
+  background-color: var(--blue-light-color);
   transition: 0.3s ease;
 }
 .products_section .products_content-card .content_box {
@@ -253,6 +254,16 @@ img {
 .negro:hover {
   border: 2px solid red;
   transition: 0.2s ease;
+}
+.blancoouter{
+  background-color: rgba(77, 77, 77, 0.514);
+  border-radius: 10px;
+  padding: 5px;
+}
+.negroouter{
+  background-color: rgba(77, 77, 77, 0.514);
+  border-radius: 10px;
+  padding: 5px;
 }
 
 @media (width <= 768px) {

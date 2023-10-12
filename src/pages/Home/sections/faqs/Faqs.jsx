@@ -26,24 +26,24 @@ const data = [
 
 export default function Faqs() {
   return (
-    <div className="faqs_section">
-      <div className="faqs_content container">
-        <div className="title">
+    <section id='faqs' className="faqs_section">
+      <article className="faqs_content container">
+        <header className="title">
           <h2>FAQs</h2>
           <span>Debajo encontrará preguntas frecuentes.</span>
-        </div>
+        </header>
         <div className="faqs_preguntas-content">
           <Accordion sections={data} />
         </div>
-        <div className="faqs_more">
+        <article className="faqs_more">
           <h3>¿Tienes otra duda?</h3>
           <span>
             Nos encantaría ayudarte. Mandanos un email a consultas@arauca.eu{' '}
             <br />
             asunto &quot;OTRA PREGUNTA&quot; y te responderemos cuanto antes
           </span>
-        </div>
-      </div>
-    </div>
+        </article>
+      </article>
+    </section>
   );
 }

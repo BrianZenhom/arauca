@@ -36,8 +36,8 @@
   position: relative;
 }
 .hero_section-image img {
-  height: 100%;
   width: 100%;
+  aspect-ratio: 16/9;
   object-position: center;
   object-fit: cover;
   border-radius: 5px;
@@ -88,11 +88,21 @@
   text-wrap: balance;
 }
 @media (width <= 768px) {
+  
   .hero_section-content {
     padding-top: 0;
+    display: flex;
+    min-height: 100vh;
+  }
+  .hero_section-bg{
+    background-position: left;
   }
   .hero_section-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 60%;
+    height: 100%;
     padding-left: 0;
     padding-top: 20px;
   }
@@ -103,9 +113,9 @@
     font-size: clamp(0.8rem, 2vw, 1rem);
   }
   .hero_section-image {
-    height: 300px;
     min-width: 100%;
   }
+ 
 }
 
 @media (width <= 428px) {

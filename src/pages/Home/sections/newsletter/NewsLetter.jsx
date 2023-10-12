@@ -4,11 +4,11 @@ import GradientBtnTwo from './../../../../components/gradientBtn2/GradientBtnTwo
 
 export default function NewsLetter() {
   return (
-    <article className="newsletter_section">
-      <header className="newsletter_content container">
-        <div className="imgnewsletter">
+    <section id='drop' className="newsletter_section">
+      <article className="newsletter_content container">
+        <header className="imgnewsletter">
           <img src={imgtest} alt="" />
-        </div>
+        </header>
         <form>
           <div className="newsletter_form-title">
             <h2>Únete a nuestra lista.</h2>
@@ -28,7 +28,7 @@ export default function NewsLetter() {
             </label>
           </div>
         </form>
-      </header>
-    </article>
+      </article>
+    </section>
   );
 }

@@ -28,13 +28,13 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <main>
       <Navbar isIntersecting={isIntersecting} />
       <Hero ref={myRef} />
       <Products />
       <NewsLetter />
       <Faqs />
       <Footer />
-    </>
+    </main>
   );
 }

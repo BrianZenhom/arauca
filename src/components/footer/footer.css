@@ -1,5 +1,5 @@
 .footer_section {
-  background-color: white;
+  background-color: var(--secondary-color);
 }
 .footer_content {
   padding: 4rem 0 2rem;
@@ -10,6 +10,7 @@
 }
 .footer_content .logoMain {
   fill: #06191d;
+  width: 400px;
 }
 .footers_footer {
   display: flex;
@@ -69,7 +70,9 @@ hr {
 .socials2:hover a {
   color: red;
 }
-
+.logoMainFooter{
+  width: 300px;
+}
 @media (width <= 428px) {
   .footers_footer {
     display: flex;

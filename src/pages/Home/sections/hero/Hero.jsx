@@ -4,12 +4,11 @@ import GradientBtn from './../../../../components/gradientBtn/GradientBtn';
 
 const Hero = React.forwardRef((props, ref) => {
   return (
-    <article ref={ref} className="hero_section">
-      <main className="hero_section-content">
-        <div className="header">
-
-        </div>
-        <div className="hero_section-bg">
+    <section ref={ref} className="hero_section">
+      <article className="hero_section-content">
+        <header className="header">
+        </header>
+        <footer className="hero_section-bg">
           <div className="hero_section-image container">
             <div className="hero_section-text">
               <h1>Arauca es la clave de tu autenticidad</h1>
@@ -24,9 +23,9 @@ const Hero = React.forwardRef((props, ref) => {
               </div>
             </div>
           </div>
-        </div>
-      </main>
-    </article>
+        </footer>
+      </article>
+    </section>
   );
 });
 Hero.displayName = 'Hero';

@@ -28,9 +28,9 @@ export default function Products() {
   ];
 
   return (
-    <article className="products_section">
-      <header className="products_content container ">
-        <div className="singleCard">
+    <section id='products' className="products_section">
+      <article className="products_content container ">
+        <header className="singleCard">
           <div className="singleCard_content">
             <div className="singleCard_wrapper">
               <div className="singleCardTitle">
@@ -60,7 +60,7 @@ export default function Products() {
               </div>
             </div>
           </div>
-        </div>
+        </header>
         {tshirtCollection.map((t) => {
           return (
             <>
@@ -83,8 +83,12 @@ export default function Products() {
                     </div>
 
                     <div className="color">
-                      <div className="blanco"></div>
-                      <div className="negro"></div>
+                      <div className="blancoouter">
+                        <div className="blanco"></div>
+                      </div>
+                      <div className="negroouter">
+                        <div className="negro"></div>
+                      </div>
                     </div>
                   </div>
                   <div className="buttonProduct">
@@ -97,7 +101,7 @@ export default function Products() {
             </>
           );
         })}
-      </header>
-    </article>
+      </article>
+    </section>
   );
 }

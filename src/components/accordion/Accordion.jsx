@@ -11,7 +11,6 @@ const AccordionSection = ({
     const nextIndex = isActiveSection ? null : sectionIndex;
     setActiveIndex(nextIndex);
   };
-  console.log(isActiveSection);
   return (
     <div className="questions">
       <div className="accordiontitle" onClick={toggleSection}>

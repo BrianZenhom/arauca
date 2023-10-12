@@ -1,4 +1,4 @@
-import LogoComplete from '../../assets/Logocomplete';
+import LogoCompleteFooter from './../../assets/LogoCompleteFooter';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import './footer.css';
@@ -7,7 +7,9 @@ export default function Footer() {
   return (
     <footer className="footer_section">
       <div className="footer_content container">
-        <LogoComplete />
+        <a href="#">
+        <LogoCompleteFooter />
+        </a>
         <div className="socials">
           <div className="socials2">
             <a href="https://instagram.com/arauca.brand">
