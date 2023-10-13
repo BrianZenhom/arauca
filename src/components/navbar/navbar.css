@@ -55,7 +55,6 @@
   animation-timeline: scroll();
   animation-range: 0 100vh; */
   transition: all .6s ease;
-  cursor: pointer;
 }
 
 .header .linksTwo ul {
@@ -66,9 +65,11 @@
   animation-timeline: scroll();
   animation-range: 0 100vh; */
   transition: all .6s ease;
-  cursor: pointer;
 }
 
+.header .links li{
+  cursor: pointer;
+}
 
 .header .links li:hover {
   color: red;
@@ -84,6 +85,7 @@
   left: 0;
   right: 0;
   top: 0;
+  z-index: -1;
 }
 
 /* 
@@ -180,6 +182,7 @@
 #visibleUl{
   opacity: 1;
 }
+
 #hiddenUl{
   opacity: 0;
 }

@@ -22,8 +22,8 @@
 .hero_section-bg {
   width: 100%;
   z-index: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.377)),
-    url(/ARAUCA-LONGBOARD.avif);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.74)),
+    url(./ARAUCA-HD.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

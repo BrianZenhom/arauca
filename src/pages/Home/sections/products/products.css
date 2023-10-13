@@ -189,8 +189,6 @@ img {
   display: flex;
   justify-content: end;
   align-items: center;
-  margin-right: 40px;
-  height: 70px;
 }
 .buttonProduct button {
   border: none;
@@ -201,6 +199,8 @@ img {
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
+  margin-right: 30px;
+  margin-bottom: 30px;
   transition: 0.3s ease;
 }
 .buttonProduct a {

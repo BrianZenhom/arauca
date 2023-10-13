@@ -5,7 +5,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-export default function navbar({ isIntersecting }) {
+export default function Navbar({ isIntersecting }) {
   const [isScrolled, setIsScrolled] = useState(false)
 
   const handleScroll = () =>{
