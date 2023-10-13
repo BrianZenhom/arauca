@@ -9,14 +9,14 @@ export default function Products() {
     {
       Id: 1,
       img: tshirtTest,
-      title: 'Camiseta 1',
+      title: 'Washed OS',
       price: `17,99`,
     },
 
     {
       Id: 2,
       img: tshirtTest2,
-      title: 'Camiseta 2',
+      title: 'Washed OS Black',
       price: `12,99`,
     },
     {
