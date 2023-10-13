@@ -1,7 +1,7 @@
 import './products.css';
-import tshirtTest from '/tshirttest2.webp';
-import tshirtTest2 from '/tshirttest3.webp';
-import tshirtTest5 from '/tshirttest5.webp';
+import tshirtTest from '/araucav1.webp';
+import tshirtTest2 from '/araucav2.webp';
+import tshirtTest5 from '/araucav1model.webp';
 
 export default function Products() {
   // Temporary data
@@ -66,7 +66,7 @@ export default function Products() {
             <>
               <div className="products_content-card">
                 <div className="img_box">
-                  <img className="image" src={t.img} alt="" />
+                  <img style={{width: '100%', aspectRatio:938/1067 }} className="image" src={t.img} alt="" />
                 </div>
                 <div className="content_box">
                   <div className="titleProduct">
