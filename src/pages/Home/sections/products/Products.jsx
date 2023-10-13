@@ -66,7 +66,7 @@ export default function Products() {
             <>
               <div className="products_content-card">
                 <div className="img_box">
-                  <img style={{width: '100%', aspectRatio:938/1067 }} className="image" src={t.img} alt="" />
+                  <img style={{width: '100%', height: '100%', aspectRatio:938/1067 }} className="image" src={t.img} alt="" />
                 </div>
                 <div className="content_box">
                   <div className="titleProduct">
