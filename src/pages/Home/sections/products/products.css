@@ -50,7 +50,6 @@ img {
   border-radius: 4px;
 }
 .singleCard {
-  aspect-ratio: 938/1067;
   max-width: 550px;
   background-color: var(--secondary-color);
   border-radius: 5px;

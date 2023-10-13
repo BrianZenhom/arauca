@@ -23,6 +23,7 @@
   right: 60px;
   display: flex;
   gap: 30px;
+  padding: 10px;
   font-size: 20px;
   z-index: 50;
 }
@@ -131,7 +132,11 @@
   transition: 0.2s ease;
   box-shadow: var(--shadow-elevation-medium);
 }
-.UserIcons:hover .dropdown{
+.LoginIcon{
+  z-index: 50;
+  cursor: pointer;
+}
+.UserIcons .LoginIcon:hover .dropdown{
   opacity: 1;
   visibility: visible;
   transform: translateY(0);

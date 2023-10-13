@@ -50,7 +50,7 @@ export default function Navbar({ isIntersecting }) {
         </div>
       </div>
       <div className={isIntersecting ? 'UserIcons' : 'UserIcons white_li'}>
-        <div>
+        <div className='LoginIcon'>
           <AccountCircleIcon />
         </div>
         <div className="dropdown">
