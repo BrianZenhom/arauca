@@ -118,11 +118,11 @@
   position: absolute;
   justify-content: center;
   align-items: center;
-  right: 50px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-30px);
-  top: 30px;
+  right: 15px;
+  top: 40px;
   background-color: white;
   padding: 30px;
   border-radius: 5px;
@@ -143,6 +143,22 @@
   flex-direction: column;
   gap: 30px;
   width: 100%;
+  text-align: start;
+}
+.details{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.login label{
+  font-size: 12px;
+  width: 100%;
+  font-family: SwitzerLight;
+  color: var(--blue-color);
+}
+.create{
+  display: flex;
+  justify-content: end;
 }
 .login input{
   width: 100%;
@@ -154,6 +170,11 @@
   border: none;
   font-family: SwitzerMedium;
   font-size: 16px
+}
+.login button{
+  background-color: var(--blue-color);
+  border-radius: 5px;
+  color: white;
 }
 
 #small{

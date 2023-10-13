@@ -60,7 +60,10 @@ export default function Navbar({ isIntersecting }) {
           <form className="login">
             <input type="text" placeholder="E-mail" />
             <input type="password" placeholder="Contraseña" />
-            <a href="">Olvide mi contraseña.</a>
+            <div className="details">
+            <label>Olvide mi contraseña.</label>
+            <label className='create'>Crear una cuenta</label>
+            </div>
             <button>Iniciar Sesion</button>
           </form>
         </div>
