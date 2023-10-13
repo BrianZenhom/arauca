@@ -43,7 +43,7 @@ export default function Navbar({ isIntersecting }) {
         </div>
         <div className="logo_wrapper">
           <div className="logo">
-            <a href="/">
+            <a href="#">
             <LogoSVG isIntersecting={isIntersecting} isScrolled={isScrolled} />
             </a>
           </div>
@@ -51,11 +51,10 @@ export default function Navbar({ isIntersecting }) {
       </div>
       <div className={isIntersecting ? 'UserIcons' : 'UserIcons white_li'}>
         <div className='LoginIcon'>
-          <AccountCircleIcon />
-        </div>
-        <div className="dropdown">
+           <AccountCircleIcon className='AccountIcon' />
+          <div className="dropdown">
           <div className="login_text">
-            <span>Inicia sesion o crea tu cuenta</span>
+            <h4>Inicia sesion o crea tu cuenta</h4>
           </div>
           <form className="login">
             <input type="text" placeholder="E-mail" />
@@ -64,12 +63,14 @@ export default function Navbar({ isIntersecting }) {
             <label>Olvide mi contraseña.</label>
             <label className='create'>Crear una cuenta</label>
             </div>
-            <button>Iniciar Sesion</button>
+            <button className='loginBtn'>Iniciar Sesion</button>
           </form>
         </div>
-        <span>
+        </div>
+        
+        <div className='ShoppingIcon'>
           <ShoppingBagIcon />
-        </span>
+        </div>
       </div>
       
     </nav>

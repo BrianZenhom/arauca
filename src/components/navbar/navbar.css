@@ -22,8 +22,7 @@
   top: 18px;
   right: 60px;
   display: flex;
-  gap: 30px;
-  padding: 10px;
+  gap: 20px;
   font-size: 20px;
   z-index: 50;
 }
@@ -113,6 +112,7 @@
 .login_text {
   margin-bottom: 3rem;
 }
+
 .dropdown {
   display: flex;
   flex-direction: column;
@@ -121,7 +121,7 @@
   align-items: center;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-30px);
+  transform: translateY(60px);
   right: 10px;
   top: 40px;
   background-color: white;
@@ -132,15 +132,31 @@
   transition: 0.2s ease;
   box-shadow: var(--shadow-elevation-medium);
 }
-.LoginIcon{
-  z-index: 50;
+.login_text{
+  color: black;
+}
+.AccountIcon{
   cursor: pointer;
 }
-.UserIcons .LoginIcon:hover .dropdown{
+.LoginIcon{
+  padding: 10px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LoginIcon:hover .dropdown{
+  color: white;
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateY(0px);
 }
+.ShoppingIcon{
+  padding: 10px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .login {
   display: flex;
   align-items: center;
@@ -166,17 +182,27 @@
   justify-content: end;
 }
 .login input{
+  font-family: SwitzerLight;
   width: 100%;
   padding: 10px;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 5px;
 }
-.login button{
+.login input{
+  outline: 1px solid transparent;
+}
+.login input:focus{
+  outline: 1px solid var(--blue-color);
+}
+.loginBtn{
   padding: 10px;
   background: none;
   border: none;
   font-family: SwitzerMedium;
-  font-size: 16px
+  font-size: 16px;
+  cursor: pointer;
 }
-.login button{
+.loginBtn{
   background-color: var(--blue-color);
   border-radius: 5px;
   color: white;
