@@ -10,20 +10,20 @@ export default function Products() {
       Id: 1,
       img: tshirtTest,
       title: 'Washed OS',
-      price: `17,99`,
+      price: `14,99`,
     },
 
     {
       Id: 2,
       img: tshirtTest2,
       title: 'Washed OS Black',
-      price: `12,99`,
+      price: `14,99`,
     },
     {
       Id: 3,
       img: tshirtTest5,
       title: 'Camiseta 3',
-      price: `12,99`,
+      price: `14,99`,
     },
   ];
 
