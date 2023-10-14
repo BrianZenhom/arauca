@@ -17,6 +17,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
   margin-top: 0.5rem;
   font-family: SwitzerMedium;
   font-size: clamp(0.8rem, 2vw, 0.9rem);
@@ -70,13 +71,27 @@ hr {
 .socials2:hover a {
   color: red;
 }
-.logoMainFooter{
-  width: 300px;
+.logoMainFooter {
+  width: 160px;
+}
+.developed {
+  font-size: 14px;
+  font-family: SwitzerRegular;
+  width: 100%;
+  text-align: center;
+  color: var(--blue-color);
+}
+.shoutout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 @media (width <= 428px) {
   .footers_footer {
     display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 30px;
   }
 }

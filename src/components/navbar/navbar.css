@@ -9,11 +9,11 @@
   animation-timeline: scroll();
   animation-range: 0 100vh; */
   z-index: 50;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
-.navbarscrolled{
+.navbarscrolled {
   box-shadow: 0 5px 50px -5px hsla(0, 0%, 100%, 0.1),
-      0 0 0 1px hsla(0, 0%, 100%, 0.1);
+    0 0 0 1px hsla(0, 0%, 100%, 0.1);
   background: rgba(0, 0, 0, 0.349);
   padding-bottom: 30px;
 }
@@ -54,7 +54,7 @@
   /* animation: fadeinLinks ease both;
   animation-timeline: scroll();
   animation-range: 0 100vh; */
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 
 .header .linksTwo ul {
@@ -64,10 +64,10 @@
   /* animation: fadeinLinks ease both;
   animation-timeline: scroll();
   animation-range: 0 100vh; */
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 
-.header .links li{
+.header .links li {
   cursor: pointer;
 }
 
@@ -75,12 +75,12 @@
   color: red;
   transition: all 0.2s ease;
 }
-.logo{
+.logo {
   display: flex;
   justify-content: center;
   margin-top: 35px;
 }
-.logo_wrapper{
+.logo_wrapper {
   position: absolute;
   left: 0;
   right: 0;
@@ -132,29 +132,29 @@
   transition: 0.2s ease;
   box-shadow: var(--shadow-elevation-medium);
 }
-.login_text{
+.login_text {
   color: black;
 }
-.AccountIcon{
+.AccountIcon {
   cursor: pointer;
 }
-.LoginIcon{
+.LoginIcon {
   padding: 10px;
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-.LoginIcon:hover .dropdown{
+.LoginIcon:hover .dropdown {
   color: white;
   opacity: 1;
   visibility: visible;
   transform: translateY(0px);
 }
-.ShoppingIcon{
+.ShoppingIcon {
   padding: 10px;
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .login {
@@ -166,35 +166,35 @@
   width: 100%;
   text-align: start;
 }
-.details{
+.details {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.login label{
+.login label {
   font-size: 12px;
   width: 100%;
   font-family: SwitzerLight;
   color: var(--blue-color);
 }
-.create{
+.create {
   display: flex;
   justify-content: end;
 }
-.login input{
+.login input {
   font-family: SwitzerLight;
   width: 100%;
   padding: 10px;
   border: 1px solid rgb(189, 189, 189);
   border-radius: 5px;
 }
-.login input{
+.login input {
   outline: 1px solid transparent;
 }
-.login input:focus{
+.login input:focus {
   outline: 1px solid var(--blue-color);
 }
-.loginBtn{
+.loginBtn {
   padding: 10px;
   background: none;
   border: none;
@@ -202,40 +202,39 @@
   font-size: 16px;
   cursor: pointer;
 }
-.loginBtn{
+.loginBtn {
   background-color: var(--blue-color);
   border-radius: 5px;
   color: white;
 }
 
-#small{
+#small {
   min-width: 120px;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
   transform: translateY(-15px);
 }
-#big{
+#big {
   min-width: 1080px;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
   transform: translateX(90px);
-
 }
-#invisible{
+#invisible {
   opacity: 0;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
   visibility: hidden;
 }
-#shown{
+#shown {
   opacity: 1;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
   visibility: visible;
 }
 
 /* nav */
-#visibleUl{
+#visibleUl {
   opacity: 1;
 }
 
-#hiddenUl{
+#hiddenUl {
   opacity: 0;
 }
 
@@ -299,10 +298,9 @@
     right: 30px;
     gap: 20px;
   }
-  .navbarscrolled{
+  .navbarscrolled {
     padding-bottom: 0px;
   }
-  
 }
 
 @media (width <= 428px) {
@@ -322,13 +320,12 @@
     right: 25px;
     gap: 15px;
   }
- 
 }
 
-@media (width <= 320px){
-  #big{
+@media (width <= 320px) {
+  #big {
     min-width: 600px;
-    transition: all .6s ease;
+    transition: all 0.6s ease;
     transform: translateX(50px);
   }
 }

@@ -30,37 +30,7 @@ export default function Products() {
   return (
     <section id='products' className="products_section">
       <article className="products_content container ">
-        <header className="singleCard">
-          <div className="singleCard_content">
-            <div className="singleCard_wrapper">
-              <div className="singleCardTitle">
-                <h2>¿Por qué Arauca?</h2>
-              </div>
-              <div className="headline">
-                <span>
-                  <p>
-                    Somos diferentes y queremos vestir a aquellos que no desean
-                    ser uno más entre la multitud. Aquellos que tienen una
-                    seguridad arolladora y que con pasión logran todo aquello
-                    que se proponen.
-                  </p>
-                  <p>
-                    Traemos productos con historia, fusionando alta calidad con
-                    compromiso firme hacia la sostenibilidad y meticulosidad en
-                    cada detalle. Cada colección despertará tu entusiasmo y
-                    desearás adquirir cada una de ellas.
-                  </p>
-                  <p>
-                    Nuestra misión es ser el compañero de tu historia,
-                    recordándote que solo tú eres el autor.
-                    <br />
-                  </p>
-                  <b>¡No permitas que otros definan quién eres!</b>
-                </span>
-              </div>
-            </div>
-          </div>
-        </header>
+       
         {tshirtCollection.map((t) => {
           return (
             <>
@@ -101,6 +71,37 @@ export default function Products() {
             </>
           );
         })}
+         <header className="singleCard">
+          <div className="singleCard_content">
+            <div className="singleCard_wrapper">
+              <div className="singleCardTitle">
+                <h2>¿Por qué Arauca?</h2>
+              </div>
+              <div className="headline">
+                <span>
+                  <p>
+                    Somos diferentes y queremos vestir a aquellos que no desean
+                    ser uno más entre la multitud. Aquellos que tienen una
+                    seguridad arolladora y que con pasión logran todo aquello
+                    que se proponen.
+                  </p>
+                  <p>
+                    Traemos productos con historia, fusionando alta calidad con
+                    compromiso firme hacia la sostenibilidad y meticulosidad en
+                    cada detalle. Cada colección despertará tu entusiasmo y
+                    desearás adquirir cada una de ellas.
+                  </p>
+                  <p>
+                    Nuestra misión es ser el compañero de tu historia,
+                    recordándote que solo tú eres el autor.
+                    <br />
+                  </p>
+                  <b>¡No permitas que otros definan quién eres!</b>
+                </span>
+              </div>
+            </div>
+          </div>
+        </header>
       </article>
     </section>
   );

@@ -1,6 +1,8 @@
 .faqs_section {
   min-height: 100vh;
   background-color: var(--primary-color);
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 .faqs_content {
   display: flex;

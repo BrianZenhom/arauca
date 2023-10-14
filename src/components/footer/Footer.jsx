@@ -24,12 +24,17 @@ export default function Footer() {
         </div>
         <hr />
         <div className="footers_footer">
-          &copy; 2023 ARAUCA Clothing. Todos los derechos reservados.
+          &copy; 2023 ARAUCA BRAND. <br /> Todos los derechos reservados. 
           <div className="privacyterms">
             <a href="">Privacidad</a>
             <a href="">Terminos & Condiciones</a>
           </div>
         </div>
+      </div>
+      <div className="shoutout">
+      <small className='developed'>
+        <a href="https://brianzenhom.dev">Developed By Brian Zenhom</a>  
+      </small>
       </div>
     </footer>
   );
