@@ -5,18 +5,17 @@
   font-size: 18px;
   backdrop-filter: blur(10px);
   font-family: SwitzerBold;
-  /* animation: fadeinBg ease both;
-  animation-timeline: scroll();
-  animation-range: 0 100vh; */
   z-index: 50;
   transition: all 0.6s ease;
 }
+
 .navbarscrolled {
   box-shadow: 0 5px 50px -5px hsla(0, 0%, 100%, 0.1),
     0 0 0 1px hsla(0, 0%, 100%, 0.1);
   background: rgba(0, 0, 0, 0.349);
   padding-bottom: 30px;
 }
+
 .UserIcons {
   position: inherit;
   top: 7px;
@@ -26,6 +25,7 @@
   font-size: 20px;
   z-index: 50;
 }
+
 .header {
   width: 100vw;
 }
@@ -51,9 +51,6 @@
   display: flex;
   justify-content: start;
   gap: 10rem;
-  /* animation: fadeinLinks ease both;
-  animation-timeline: scroll();
-  animation-range: 0 100vh; */
   transition: all 0.6s ease;
 }
 
@@ -61,95 +58,65 @@
   display: flex;
   justify-content: end;
   gap: 10rem;
-  /* animation: fadeinLinks ease both;
-  animation-timeline: scroll();
-  animation-range: 0 100vh; */
   transition: all 0.6s ease;
+
 }
 
 .header .links li {
   cursor: pointer;
+  font-weight: 500;
+  font-family: onest;
 }
 
 .header .links li:hover {
   color: red;
   transition: all 0.2s ease;
 }
+
 .logo {
   display: flex;
   justify-content: center;
-  margin-top: 35px;
 }
+
 .logo_wrapper {
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: 15px;
   z-index: -1;
 }
-
-/* 
-.logoMain {
-  width: 1080px;
-  fill: var(--primary-color);
-  animation: scroll ease both;
-  animation-timeline: scroll();
-  animation-range: 0 100vh;
-} */
-
-/* .fadein {
-  animation: fadein ease both;
-  animation-timeline: scroll();
-  animation-range: 0 100vh;
-} */
 
 .white_li {
   color: white;
 }
+
 .fill_white {
   fill: white;
 }
+
 .login_text {
   margin-bottom: 3rem;
 }
 
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(60px);
-  right: 10px;
-  top: 40px;
-  background-color: white;
-  padding: 30px;
-  border-radius: 5px;
-  width: 300px;
-  height: 400px;
-  transition: 0.2s ease;
-  box-shadow: var(--shadow-elevation-medium);
-}
-.login_text {
-  color: black;
-}
+
 .AccountIcon {
   cursor: pointer;
 }
+
 .LoginIcon {
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .LoginIcon:hover .dropdown {
   color: white;
   opacity: 1;
   visibility: visible;
   transform: translateY(0px);
 }
+
 .ShoppingIcon {
   padding: 10px;
   display: flex;
@@ -157,75 +124,31 @@
   align-items: center;
 }
 
-.login {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 30px;
-  width: 100%;
-  text-align: start;
-}
-.details {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.login label {
-  font-size: 12px;
-  width: 100%;
-  font-family: SwitzerLight;
-  color: var(--blue-color);
-}
-.create {
-  display: flex;
-  justify-content: end;
-}
-.login input {
-  font-family: SwitzerLight;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid rgb(189, 189, 189);
-  border-radius: 5px;
-}
-.login input {
-  outline: 1px solid transparent;
-}
-.login input:focus {
-  outline: 1px solid var(--blue-color);
-}
-.loginBtn {
-  padding: 10px;
-  background: none;
-  border: none;
-  font-family: SwitzerMedium;
-  font-size: 16px;
-  cursor: pointer;
-}
-.loginBtn {
-  background-color: var(--blue-color);
-  border-radius: 5px;
-  color: white;
+#small {
+  min-width: 160px;
+  transition: all .5s ease-in-out;
 }
 
-#small {
-  min-width: 120px;
-  transition: all 0.6s ease;
-  transform: translateY(-15px);
-}
 #big {
   min-width: 1080px;
-  transition: all 0.6s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
   transform: translateX(90px);
+  transition: transformX 0.6s ease-in-out;
 }
+
 #invisible {
   opacity: 0;
-  transition: all 0.6s ease;
+  transition: all 0.2s ease;
   visibility: hidden;
+  display: none;
 }
+
 #shown {
   opacity: 1;
-  transition: all 0.6s ease;
+  transition: all 0.2s ease;
   visibility: visible;
 }
 
@@ -284,45 +207,53 @@
   }
 } */
 
-@media (320px <= width <= 768px) {
+@media (320px <=width <=768px) {
   .linksOne {
     display: none;
   }
+
   .linksTwo {
     display: none;
   }
+
   .navbar {
     height: 65px;
   }
+
   .UserIcons {
     right: 30px;
     gap: 20px;
   }
+
   .navbarscrolled {
     padding-bottom: 0px;
   }
 }
 
-@media (width <= 428px) {
+@media (width <=428px) {
   .links {
     position: absolute;
   }
+
   .linksOne {
     display: none;
   }
+
   .linksTwo {
     display: none;
   }
+
   .navbar {
     height: 65px;
   }
+
   .UserIcons {
     right: 25px;
     gap: 15px;
   }
 }
 
-@media (width <= 320px) {
+@media (width <=320px) {
   #big {
     min-width: 600px;
     transition: all 0.6s ease;
