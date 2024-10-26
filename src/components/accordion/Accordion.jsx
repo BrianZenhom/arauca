@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+import { useState } from 'react'
+import AddOutlinedIcon from '@mui/icons-material/AddOutlined'
 
 const AccordionSection = ({
   section,
@@ -8,9 +8,9 @@ const AccordionSection = ({
   sectionIndex,
 }) => {
   const toggleSection = () => {
-    const nextIndex = isActiveSection ? null : sectionIndex;
-    setActiveIndex(nextIndex);
-  };
+    const nextIndex = isActiveSection ? null : sectionIndex
+    setActiveIndex(nextIndex)
+  }
   return (
     <div className="questions">
       <div className="accordiontitle" onClick={toggleSection}>
@@ -37,11 +37,11 @@ const AccordionSection = ({
         </span>
       }
     </div>
-  );
-};
+  )
+}
 
 const Accordion = ({ sections }) => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(null)
   return (
     <div className="accordion">
       {sections.map((section, index) => (
@@ -54,7 +54,7 @@ const Accordion = ({ sections }) => {
         />
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default Accordion;
+export default Accordion
