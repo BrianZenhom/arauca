@@ -25,26 +25,8 @@ export default function Navbar() {
   return (
     <nav className={isScrolled ? 'navbar navbarscrolled' : 'navbar'}>
       <div className="header container">
-        <div className="links white_li">
-          <div className="linksOne">
-            <ul id={isScrolled ? 'visibleUl' : 'hiddenUl'}>
-              <li>Drop</li>
-              <li>Marca</li>
-            </ul>
-          </div>
-          <div className="linksTwo">
-            <ul id={isScrolled ? 'visibleUl' : 'hiddenUl'}>
-              <li>Faqs</li>
-              <li>Ayuda</li>
-            </ul>
-          </div>
-        </div>
-        <div className="logo_wrapper">
-          <div className="logo">
-            <a href="#">
-              <LogoSVG isScrolled={isScrolled} />
-            </a>
-          </div>
+        <div className="logo">
+          <LogoSVG isScrolled={isScrolled} />
         </div>
       </div>
       <div className="UserIcons white_li">

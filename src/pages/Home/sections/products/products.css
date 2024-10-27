@@ -43,7 +43,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem;
 }
 
 .products_description button {

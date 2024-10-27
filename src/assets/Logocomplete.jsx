@@ -1,8 +1,7 @@
-export default function LogoComplete({ isIntersecting, isScrolled }) {
+export default function LogoComplete({ isScrolled }) {
   return (
     <svg
-      className={isIntersecting ? 'logoMain' : 'logoMain fill_white'}
-      id={isScrolled ? 'small' : 'big'}
+      className={isScrolled ? 'logoMain' : 'logoMain_small'}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 811.23 151.55"
     >
