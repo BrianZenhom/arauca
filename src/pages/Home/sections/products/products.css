@@ -141,18 +141,18 @@ img {
   cursor: pointer;
 }
 
-.singleCard {
+.single_card {
   max-width: 1080px;
   background-color: var(--secondary-color);
   border-radius: 5px;
 }
 
-.singleCard_content {
+.single_card-content {
   color: var(--primary-color);
   text-wrap: balance;
 }
 
-.singleCardTitle {
+.single_card-title {
   width: 100%;
   padding-bottom: 1rem;
 }

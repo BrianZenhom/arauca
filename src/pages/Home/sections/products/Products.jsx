@@ -42,11 +42,11 @@ export default function Products() {
         </button>
       </div>
       <Products products={products} />
-      <div className="singleCard">
-        <div className="singleCard_content">
-          <div className="singleCard_wrapper">
+      <div className="single_card">
+        <div className="single_card-content">
+          <div className="single_card-wrapper">
             <div className="headline">
-              <div className="singleCardTitle">
+              <div className="single_card-title">
                 <h2>¿Por qué Arauca?</h2>
               </div>
               <span>
