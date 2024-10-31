@@ -1,5 +1,9 @@
-import './gradientbtnTwo.css';
+import './gradientbtnTwo.css'
 
-export default function GradientBtnTwo({ text }) {
-  return <div className="gradientBtn_componentTwo">{text}</div>;
+export default function GradientBtnTwo({ text, type }) {
+  return (
+    <button type={type} className="gradientBtn_componentTwo">
+      {text}
+    </button>
+  )
 }

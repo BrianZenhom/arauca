@@ -8,9 +8,9 @@
   height: 42px;
   width: 170px;
   background: var(--primary-color);
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: clamp(12px, 3vw, 18px);
-  font-family: SwitzerRegular;
+  font-family: Onest;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,28 +19,29 @@
   transition: all 0.3s ease;
   cursor: pointer;
 }
+
 .gradientBtn_component:hover {
   background: transparent;
   color: black;
 }
+
 .gradientBtn_component::before,
 .gradientBtn_component::after {
   content: '';
   position: absolute;
   inset: -1px;
   z-index: -1;
-  background: conic-gradient(
-    from var(--gradient-angle),
-    var(--accent-color),
-    var(--secondary-accent-color),
-    white,
-    var(--secondary-accent-color),
-    var(--accent-color)
-  );
-  border-radius: 5px;
+  background: conic-gradient(from var(--gradient-angle),
+      var(--accent-color),
+      var(--secondary-accent-color),
+      white,
+      var(--secondary-accent-color),
+      var(--accent-color));
+  border-radius: 8px;
   animation: rotation 10s linear infinite;
   backdrop-filter: blur(1rem);
 }
+
 .gradientBtn_component::after {
   filter: blur(2rem);
 }
@@ -49,16 +50,17 @@
   0% {
     --gradient-angle: 0deg;
   }
+
   100% {
     --gradient-angle: 360deg;
   }
 }
 
-@media (width <= 428px) {
+@media (width <=428px) {
   .gradientBtn_component {
     height: 29px;
     width: 120px;
     background: var(--primary-color);
-    border-radius: 4px;
+    border-radius: 8px;
   }
 }
