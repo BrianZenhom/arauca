@@ -2,6 +2,7 @@
   min-height: 70vh;
   z-index: 3;
 }
+
 .newsletter_content {
   display: flex;
   align-items: center;
@@ -11,115 +12,110 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+
 .imgnewsletter {
   background-color: rgb(255, 255, 255);
-  border-radius: 5px;
+  border-radius: 8px;
   max-width: 450px;
   max-height: 450px;
 }
+
 .imgnewsletter img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 8px;
 }
+
 .newsletter_form-title {
   display: flex;
   flex-direction: column;
   padding-left: 30px;
 }
+
 .newsletter_form-title input {
   width: 70%;
+  background-color: rgba(0, 0, 0, 0.034);
 }
+
 .newsletter_form-title h2 {
   font-size: clamp(1.5rem, 2vw, 2.2rem);
   padding-bottom: 30px;
-  background: conic-gradient(
-    from var(--gradient-angle),
-    lightgray,
-    gray,
-    var(--primary-color),
-    gray,
-    lightgray
-  );
+  background: conic-gradient(from var(--gradient-angle),
+      lightgray,
+      gray,
+      var(--primary-color),
+      gray,
+      lightgray);
   animation: rotation 15s linear infinite;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .newsletter_form-title span {
-  font-size: clamp(14px, 3vw, 1.125rem);
-  font-family: SwitzerLight;
+  font-size: clamp(12px, 3vw, 16px);
+  font-family: Onest;
   text-wrap: balance;
 }
+
 .signup {
   margin-top: 30px;
   display: flex;
   gap: 30px;
   color: white;
 }
-.signup button {
-  padding: 10px 42px;
-  background: none;
-  border: none;
-  background-color: white;
-  border-radius: 5px;
-  font-family: SwitzerBold;
-  font-size: clamp(1rem, 2vw, 1.1rem);
-  transition: 0.2s ease;
-  cursor: pointer;
-}
-.signup button:hover {
-  background-color: var(--primary-color);
-  color: white;
-}
+
 .signup input {
+  outline: none;
   border: none;
-  padding-left: 10px;
-  border-radius: 5px;
-  font-family: SwitzerLight;
-  font-size: clamp(1rem, 2vw, 1.1rem);
-  border: 1px solid transparent;
-  box-sizing: border-box;
-  min-width: 200px;
+  padding: 0 10px;
+  border-radius: 8px;
+  font-family: Onest;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.089);
 }
 
 .signup input:focus {
-  border: 1px solid gray;
-  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.425);
 }
-.signup input:active {
-  border: 1px solid gray;
-}
+
+
 .newsletter_form-title b {
-  font-family: SwitzerBold;
+  font-family: Onest;
   color: var(--primary-color);
 }
+
 .newsletter_form-title label {
   margin-top: 1rem;
-  font-family: SwitzerRegular;
+  font-family: Onest;
   font-size: clamp(0.5rem, 2vw, 0.7rem);
 }
+
 .newsletter_form-title a {
-  font-family: SwitzerBold;
+  font-family: Onest;
+  font-weight: 800;
   color: black;
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
   .newsletter_content {
     display: flex;
     flex-direction: column;
     padding-top: 7rem;
     padding-bottom: 7rem;
   }
+
   .newsletter_form-title {
     padding-left: 0;
   }
 }
-@media (width <= 428px) {
+
+@media (width <=428px) {
   .signup {
     display: flex;
     flex-direction: column;
     padding-left: 0px;
   }
+
   .signup input {
     width: 100%;
     height: 40px;
