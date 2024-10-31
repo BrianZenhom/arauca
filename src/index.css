@@ -29,57 +29,66 @@
     21.2px 42.3px 49.7px -2.6px hsl(var(--shadow-color) / 0.1),
     30px 60px 70.4px -3px hsl(var(--shadow-color) / 0.09);
 }
+
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
 }
+
 h1 {
   font-size: clamp(32px, 4vw, 64px) !important;
 }
+
 h2 {
   font-size: clamp(21px, 4vw, 32px) !important;
 }
+
 h3 {
   font-size: clamp(18px, 4vw, 1.5rem) !important;
 }
 
 span {
-  font-size: clamp(12px, 2vw, 18px);
+  font-size: clamp(12px, 2vw, 14px);
   text-wrap: balance;
 }
+
 p {
   margin-bottom: 0.5rem;
-  font-size: clamp(12px, 2vw, 18px);
+  font-size: clamp(12px, 2vw, 16px);
+  text-wrap: pretty;
 }
+
 b {
-  font-family: SwitzerBold;
+  font-family: Onest;
 }
+
 @font-face {
   font-family: PleinBold;
   src: url(./assets/Plein-Bold.woff2);
 }
+
 @font-face {
   font-family: PleinBlack;
   src: url(./assets/Plein-Black.woff2);
 }
-@font-face {
-  font-family: SwitzerBold;
-  src: url(./assets/Switzer-Bold.woff2);
-}
+
 @font-face {
   font-family: SwitzerExtra;
   src: url(./assets/Switzer-Extrabold.woff2);
 }
+
 @font-face {
   font-family: SwitzerLight;
   src: url(./assets/Switzer-Light.woff2);
 }
+
 @font-face {
   font-family: SwitzerMedium;
   src: url(./assets/Switzer-Medium.woff2);
 }
+
 @font-face {
   font-family: SwitzerRegular;
   src: url(./assets/Switzer-Regular.woff2);
@@ -87,7 +96,6 @@ b {
 
 html {
   scroll-behavior: smooth;
-  font-family: SwitzerBold, system-ui, sans-serif;
+  font-family: Onest, system-ui, sans-serif;
   overflow-x: hidden;
 }
-
