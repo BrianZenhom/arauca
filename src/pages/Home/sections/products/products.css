@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 5rem;
-  padding-top: 16rem;
+  padding-top: 22rem;
 }
 
 .products_content {
@@ -17,9 +17,73 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   width: 100%;
   gap: 40px;
-  padding-top: 7rem;
+  padding-top: 3rem;
   padding-bottom: 7rem;
   align-items: center;
+}
+
+.products_fitler-button {
+  width: 1080px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filters_button {
+  /* Uncomment V to activate */
+  /* display: none;
+  visibility: hidden; */
+  background: none;
+  border: none;
+  font-family: Onest;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.filters_button:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  background-color: white;
+  bottom: -2px;
+  left: 0;
+  transition: transform .2s ease-out;
+}
+
+.filters_button:hover::after {
+  transform: scaleX(1);
+}
+
+.filters_button::after {
+  transform-origin: bottom right;
+}
+
+.filters_button:hover::after {
+  transform-origin: bottom left;
+}
+
+.filter_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.filter_header span {
+  font-size: 20px;
+  color:
+    var(--secondary-accent-color);
+}
+
+.filter_header button {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .products_content-card {
@@ -27,11 +91,9 @@
   flex-direction: column;
   justify-content: start;
   position: relative;
-  background: var(--primary-color);
-  transition: 0.3s ease;
-  border-bottom: transparent;
-  border-right: transparent;
+  transition: 0.2s ease;
   border-radius: 8px;
+  max-width: 350px;
 }
 
 .products_content-card::after {
@@ -69,13 +131,14 @@
 }
 
 img {
-  overflow: hidden;
   border-radius: 8px;
 }
+
 
 .image {
   object-fit: cover;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .singleCard {
@@ -89,12 +152,9 @@ img {
   text-wrap: balance;
 }
 
-.singleCard_wrapper {
-  padding: 1rem;
-}
-
 .singleCardTitle {
   width: 100%;
+  padding-bottom: 1rem;
 }
 
 .singleCardTitle h1 {
@@ -103,17 +163,21 @@ img {
 }
 
 .headline {
-  padding: 15px;
+  padding: 2rem 3rem;
 }
 
 .headline p {
-  margin-bottom: 2rem;
+  padding-bottom: 1rem;
   line-height: 24px !important;
 }
 
 .img_box {
   max-width: 420px;
+  position: relative;
+  border-radius: 8px;
 }
+
+
 
 .products_section .products_content-card .img_box {
   width: 100%;
@@ -162,12 +226,12 @@ img {
   text-align: center;
   font-family: SwitzerLight;
   color: white;
-  font-size: clamp(0.6rem, 2vw, 2rem);
+  font-size: clamp(14px, 2vw, 15px);
   gap: 40px;
 }
 
 .titleProduct h3 {
-  font-family: SwitzerBold;
+  font-family: Onest;
 }
 
 .sizeandcolor {
@@ -189,12 +253,12 @@ img {
 }
 
 .size h3 {
-  font-family: SwitzerLight;
-  font-size: 20px !important;
+  font-family: Onest;
+  font-size: 15px !important;
 }
 
 .size span {
-  font-family: switzerBold;
+  font-family: Onest;
   padding: 10px;
   width: 20px;
   height: 15px;
@@ -220,13 +284,13 @@ img {
 }
 
 .color h3 {
-  font-family: SwitzerLight;
-  font-size: 20px !important;
+  font-family: Onest;
+  font-size: 14px;
 }
 
 .color span {
   padding: 5px;
-  font-family: switzerBold;
+  font-family: Onest;
   cursor: pointer;
 }
 
