@@ -1,6 +1,3 @@
-.footer_section {
-  background-color: var(--secondary-color);
-}
 .footer_content {
   padding: 4rem 0 2rem;
   display: flex;
@@ -8,10 +5,12 @@
   align-items: center;
   justify-content: center;
 }
+
 .footer_content .logoMain {
   fill: #06191d;
   width: 400px;
 }
+
 .footers_footer {
   display: flex;
   justify-content: space-between;
@@ -22,6 +21,7 @@
   font-family: SwitzerMedium;
   font-size: clamp(0.8rem, 2vw, 0.9rem);
 }
+
 .privacyterms {
   display: flex;
   gap: 30px;
@@ -29,19 +29,23 @@
   font-family: SwitzerMedium;
   font-size: clamp(0.8rem, 2vw, 0.9rem);
 }
+
 .privacyterms a {
   color: rgb(74, 87, 87);
-  font-family: SwitzerBold;
+  font-family: Onest;
   text-decoration: underline;
   text-underline-position: below;
 }
+
 .privacyterms a:hover {
   color: rgb(3, 3, 3);
   text-decoration: none;
 }
+
 hr {
   width: 100%;
 }
+
 .socials {
   font-family: SwitzerMedium;
   display: flex;
@@ -49,31 +53,39 @@ hr {
   padding-bottom: 2rem;
   padding-top: 1rem;
 }
+
 .socials1 {
   font-size: 28px;
   cursor: pointer;
 }
+
 .socials2 {
   font-size: 28px;
   cursor: pointer;
 }
+
 .socials1 a {
   color: #06191d;
   transition: 0.3s ease;
 }
+
 .socials2 a {
   color: #06191d;
   transition: 0.3s ease;
 }
+
 .socials1:hover a {
   color: red;
 }
+
 .socials2:hover a {
   color: red;
 }
+
 .logoMainFooter {
   width: 160px;
 }
+
 .developed {
   font-size: 14px;
   font-family: SwitzerRegular;
@@ -81,13 +93,15 @@ hr {
   text-align: center;
   color: var(--blue-color);
 }
+
 .shoutout {
   width: 100%;
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
 }
-@media (width <= 428px) {
+
+@media (width <=428px) {
   .footers_footer {
     display: flex;
     flex-direction: column;
