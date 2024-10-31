@@ -1,5 +1,5 @@
 import './navbar.css'
-import LogoSVG, { CartIcon, UserLogo } from './../../assets/Logocomplete'
+import LogoSVG from './../../assets/Logocomplete'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
@@ -23,21 +23,25 @@ export default function Navbar() {
   }, [])
 
   return (
-    <nav className={isScrolled ? 'navbar navbarscrolled' : 'navbar'}>
-      <div className="header container">
-        <div className="logo">
-          <LogoSVG isScrolled={isScrolled} />
-        </div>
-      </div>
-      <div className="UserIcons white_li">
-        <div className="LoginIcon">
-          <UserLogo />
-        </div>
+    <>
+      <nav className={isScrolled ? 'navbar navbarscrolled' : 'navbar'}>
+        <div className="navbar_wrapper">
+          <div className="header container">
+            <div className="logo">
+              <LogoSVG isScrolled={isScrolled} />
+            </div>
+          </div>
+          <div className="nav_buttons-cta">
+            <div className="nav_buttons">
+              <span>Account</span>
+            </div>
 
-        <div className="ShoppingIcon">
-          <CartIcon />
+            <div className="nav_buttons">
+              <span>Bag</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   )
 }
