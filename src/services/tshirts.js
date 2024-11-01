@@ -8,7 +8,7 @@ export const tshirtCollection = [
     img: tshirtTest,
     title: 'Washed sand',
     price: 20,
-    category: 'all',
+    category: 'camisetas',
   },
 
   {
@@ -16,13 +16,13 @@ export const tshirtCollection = [
     img: tshirtTest2,
     title: 'Washed dark',
     price: 15,
-    category: 'all',
+    category: 'camisetas',
   },
   {
     Id: 3,
     img: tshirtTest5,
     title: 'Washed khaki',
     price: 15,
-    category: 'all',
+    category: 'camisetas',
   },
 ]
