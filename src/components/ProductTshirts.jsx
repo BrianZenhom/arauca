@@ -2,7 +2,7 @@ import { PlusSign } from '../assets/Logocomplete'
 
 export default function productTshirts({ products }) {
   return (
-    <article className="products_content container ">
+    <div className="products_content container ">
       {products.map(t => {
         return (
           <div className="products_content-card" key={t.Id}>
@@ -22,7 +22,6 @@ export default function productTshirts({ products }) {
             </div>
             <div className="products_description">
               <div className="products_details">
-                <span>Arauca</span>
                 <span className="products_name">{t.title}</span>
                 <span className="products_price">{t.price},00 €</span>
               </div>
@@ -33,6 +32,6 @@ export default function productTshirts({ products }) {
           </div>
         )
       })}
-    </article>
+    </div>
   )
 }
