@@ -36,6 +36,7 @@ export default function Products() {
       <Filters
         handleCloseFilter={handleCloseFilter}
         filtersOpen={filtersOpen}
+        changeFilters={setFilters}
       />
       <div className="products_fitler-button">
         <button onClick={handleOpenFilters} className="filters_button">
@@ -43,30 +44,47 @@ export default function Products() {
         </button>
       </div>
       <ProductTshirts products={productList} />
-      <div className="single_card">
+      <h2 className="distinction_subtitle">¿Por qué ARAUCA?</h2>
+      <div className="distinction_cards">
         <div className="single_card-content">
           <div className="single_card-wrapper">
             <div className="headline">
               <div className="single_card-title">
-                <h2>¿Por qué Arauca?</h2>
+                <h3>Autenticidad y exclusividad</h3>
               </div>
-              <span>
-                <p>
-                  Somos diferentes y queremos vestir a aquellos que no desean
-                  ser uno más entre la multitud. Aquellos que tienen una
-                  seguridad arolladora y que con pasión logran todo aquello que
-                  se proponen. <br /> Traemos productos con historia, fusionando
-                  alta calidad con compromiso firme hacia la sostenibilidad y
-                  meticulosidad en cada detalle. Cada colección despertará tu
-                  entusiasmo y desearás adquirir cada una de ellas.
-                </p>
-                <p>
-                  Nuestra misión es ser el compañero de tu historia,
-                  recordándote que solo tú eres el autor.
-                  <br />
-                </p>
-                <p>¡No permitas que otros definan quién eres!</p>
-              </span>
+              <p>
+                Ofrecemos piezas exclusivas diseñadas para quienes desean
+                destacar y reflejar autenticidad y confianza en su estilo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="single_card-content">
+          <div className="single_card-wrapper">
+            <div className="headline">
+              <div className="single_card-title">
+                <h3>Calidad y compromiso genuino</h3>
+              </div>
+              <p>
+                No compras solo una prenda; adquieres calidad duradera y una
+                inversión en sostenibilidad, apoyando prácticas responsables que
+                cuidan el medio ambiente.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="single_card-content">
+          <div className="single_card-wrapper">
+            <div className="headline">
+              <div className="single_card-title">
+                <h3>Ser tú mismo y narrar tu historia</h3>
+              </div>
+              <p>
+                Te acompañamos en tu viaje personal, inspirándote a vivir y
+                vestir según tu esencia. No solo usas una prenda; llevas una
+                declaración de identidad que reafirma tu poder de definir quién
+                eres.
+              </p>
             </div>
           </div>
         </div>
