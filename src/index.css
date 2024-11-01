@@ -35,6 +35,7 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -46,7 +47,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(18px, 4vw, 1.5rem) !important;
+  font-size: clamp(14px, 4vw, 21px) !important;
 }
 
 span {
@@ -64,35 +65,7 @@ b {
   font-family: Onest;
 }
 
-@font-face {
-  font-family: PleinBold;
-  src: url(./assets/Plein-Bold.woff2);
-}
 
-@font-face {
-  font-family: PleinBlack;
-  src: url(./assets/Plein-Black.woff2);
-}
-
-@font-face {
-  font-family: SwitzerExtra;
-  src: url(./assets/Switzer-Extrabold.woff2);
-}
-
-@font-face {
-  font-family: SwitzerLight;
-  src: url(./assets/Switzer-Light.woff2);
-}
-
-@font-face {
-  font-family: SwitzerMedium;
-  src: url(./assets/Switzer-Medium.woff2);
-}
-
-@font-face {
-  font-family: SwitzerRegular;
-  src: url(./assets/Switzer-Regular.woff2);
-}
 
 html {
   scroll-behavior: smooth;
