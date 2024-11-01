@@ -3,6 +3,7 @@ import { tshirtCollection } from './../../../../services/tshirts'
 import { PlusSign } from '../../../../assets/Logocomplete'
 import { useState } from 'react'
 import { Filters } from '../../../../components/Filters'
+import ProductTshirts from './../../../../components/ProductTshirts'
 
 export default function Products() {
   const [filtersOpen, setFiltersOpen] = useState(false)
@@ -20,7 +21,7 @@ export default function Products() {
     })
   }
 
-  const products = filterProducts(tshirtCollection)
+  const productList = filterProducts(tshirtCollection)
 
   const handleOpenFilters = () => {
     setFiltersOpen(!filtersOpen)
@@ -41,7 +42,7 @@ export default function Products() {
           <PlusSign /> Filtro
         </button>
       </div>
-      <Products products={products} />
+      <ProductTshirts products={productList} />
       <div className="single_card">
         <div className="single_card-content">
           <div className="single_card-wrapper">
