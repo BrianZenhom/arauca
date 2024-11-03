@@ -40,7 +40,7 @@ export function Filters({ filtersOpen, handleCloseFilter, changeFilters }) {
             type="range"
             id={minPriceFilterId}
             min="15"
-            max="200"
+            max="50"
             onChange={handleChangeMinPrice}
           />
           <span>${minPrice}</span>
@@ -49,8 +49,6 @@ export function Filters({ filtersOpen, handleCloseFilter, changeFilters }) {
           <label htmlFor={categoryFilterId}>Categorias</label>
           <select onChange={handleChangeCategory} id={categoryFilterId}>
             <option value="camisetas">camisetas</option>
-            <option value="hoodies">Cazadoras</option>
-            <option value="jeans">Sudaderas</option>
           </select>
         </div>
       </div>
