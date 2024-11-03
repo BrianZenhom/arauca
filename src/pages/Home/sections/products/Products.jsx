@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { Filters } from '../../../../components/Filters'
 import ProductTshirts from './../../../../components/ProductTshirts'
 
-export default function Products() {
+function useFilters() {
   const [filtersOpen, setFiltersOpen] = useState(false)
   const [filters, setFilters] = useState({
     category: 'all',
@@ -20,6 +20,13 @@ export default function Products() {
       )
     })
   }
+
+  return { filterProducts, filtersOpen, setFilters, setFiltersOpen }
+}
+
+export default function Products() {
+  const { filterProducts, setFilters, setFiltersOpen, filtersOpen } =
+    useFilters()
 
   const productList = filterProducts(tshirtCollection)
 
@@ -44,51 +51,6 @@ export default function Products() {
         </button>
       </div>
       <ProductTshirts products={productList} />
-      <h2 className="distinction_subtitle">¿Por qué ARAUCA?</h2>
-      <div className="distinction_cards">
-        <div className="single_card-content">
-          <div className="single_card-wrapper">
-            <div className="headline">
-              <div className="single_card-title">
-                <h3>Autenticidad y exclusividad</h3>
-              </div>
-              <p>
-                Ofrecemos piezas exclusivas diseñadas para quienes desean
-                destacar y reflejar autenticidad y confianza en su estilo.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="single_card-content">
-          <div className="single_card-wrapper">
-            <div className="headline">
-              <div className="single_card-title">
-                <h3>Calidad y compromiso genuino</h3>
-              </div>
-              <p>
-                No compras solo una prenda; adquieres calidad duradera y una
-                inversión en sostenibilidad, apoyando prácticas responsables que
-                cuidan el medio ambiente.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="single_card-content">
-          <div className="single_card-wrapper">
-            <div className="headline">
-              <div className="single_card-title">
-                <h3>Ser tú mismo y narrar tu historia</h3>
-              </div>
-              <p>
-                Te acompañamos en tu viaje personal, inspirándote a vivir y
-                vestir según tu esencia. No solo usas una prenda; llevas una
-                declaración de identidad que reafirma tu poder de definir quién
-                eres.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   )
 }
