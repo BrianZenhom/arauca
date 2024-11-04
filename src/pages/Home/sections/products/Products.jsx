@@ -4,29 +4,11 @@ import { PlusSign } from '../../../../assets/Logocomplete'
 import { useState } from 'react'
 import { Filters } from '../../../../components/Filters'
 import ProductTshirts from './../../../../components/ProductTshirts'
-
-function useFilters() {
-  const [filtersOpen, setFiltersOpen] = useState(false)
-  const [filters, setFilters] = useState({
-    category: 'all',
-    minPrice: 0,
-  })
-
-  const filterProducts = products => {
-    return products.filter(product => {
-      return (
-        product.price >= filters.minPrice &&
-        (filters.category === 'all' || product.category === filters.category)
-      )
-    })
-  }
-
-  return { filterProducts, filtersOpen, setFilters, setFiltersOpen }
-}
+import { useFilters } from '../../../../hooks/useFilters'
 
 export default function Products() {
-  const { filterProducts, setFilters, setFiltersOpen, filtersOpen } =
-    useFilters()
+  const [filtersOpen, setFiltersOpen] = useState(false)
+  const { filterProducts } = useFilters()
 
   const productList = filterProducts(tshirtCollection)
 
@@ -43,7 +25,6 @@ export default function Products() {
       <Filters
         handleCloseFilter={handleCloseFilter}
         filtersOpen={filtersOpen}
-        changeFilters={setFilters}
       />
       <div className="products_fitler-button">
         <button onClick={handleOpenFilters} className="filters_button">
