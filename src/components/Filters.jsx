@@ -1,23 +1,23 @@
 import './Filters.css'
-import { useState, useId } from 'react'
+import { useId } from 'react'
 import { CloseIcon } from '../assets/Logocomplete'
+import { useFilters } from '../hooks/useFilters'
 
-export function Filters({ filtersOpen, handleCloseFilter, changeFilters }) {
-  const [minPrice, setMinPrice] = useState(15)
+export function Filters({ filtersOpen, handleCloseFilter }) {
+  const { filters, setFilters } = useFilters()
+
   const minPriceFilterId = useId()
   const categoryFilterId = useId()
 
   const handleChangeMinPrice = event => {
-    // Algo está mal
-    setMinPrice(event.target.value)
-    changeFilters(prevState => ({
+    setFilters(prevState => ({
       ...prevState,
       minPrice: event.target.value,
     }))
   }
 
   const handleChangeCategory = event => {
-    changeFilters(prevState => ({
+    setFilters(prevState => ({
       ...prevState,
       category: event.target.value,
     }))
@@ -42,8 +42,9 @@ export function Filters({ filtersOpen, handleCloseFilter, changeFilters }) {
             min="15"
             max="50"
             onChange={handleChangeMinPrice}
+            value={filters.minPrice}
           />
-          <span>${minPrice}</span>
+          <span>${filters.minPrice}</span>
         </div>
         <div className="filter_category">
           <label htmlFor={categoryFilterId}>Categorias</label>
