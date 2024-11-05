@@ -2,9 +2,11 @@ import './navbar.css'
 import LogoSVG from './../../assets/Logocomplete'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import { useCart } from '../../hooks/useCart'
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const { openCart, setOpenCart } = useCart()
 
   const handleScroll = () => {
     if (window.scrollY > 60) {
@@ -22,6 +24,10 @@ export default function Navbar() {
     }
   }, [])
 
+  const handleOpenCart = () => {
+    setOpenCart(!openCart)
+  }
+
   return (
     <>
       <nav className={isScrolled ? 'navbar navbarscrolled' : 'navbar'}>
@@ -33,11 +39,11 @@ export default function Navbar() {
           </div>
           <div className="nav_buttons-cta">
             <div className="nav_buttons">
-              <span>Account</span>
+              <button>Account</button>
             </div>
 
             <div className="nav_buttons">
-              <span>Bag</span>
+              <button onClick={handleOpenCart}>Bag</button>
             </div>
           </div>
         </div>

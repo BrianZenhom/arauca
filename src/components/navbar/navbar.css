@@ -6,17 +6,16 @@
   font-size: 14px;
   backdrop-filter: blur(10px);
   font-family: Onest;
-  z-index: 50;
   height: 50px;
   transition: .5s ease-in-out;
-  z-index: 99999;
+  z-index: 1;
 }
 
 .navbarscrolled {
   box-shadow: 0 5px 50px -5px hsla(0, 0%, 100%, 0.1),
     0 0 0 1px hsla(0, 0%, 100%, 0.1);
   background: rgba(0, 0, 0, 0.349);
-  z-index: 99999;
+  z-index: 1;
 }
 
 .navbar_wrapper {
@@ -33,7 +32,7 @@
   right: 60px;
   font-size: 14px;
   gap: 20px;
-  z-index: 50;
+  z-index: 1;
 }
 
 .nav_buttons-cta {
@@ -76,14 +75,18 @@
   fill: white;
 }
 
-.nav_buttons span {
+.nav_buttons button {
   cursor: pointer;
   display: inline-block;
   position: relative;
   font-size: 14px;
+  background: none;
+  border: none;
+  color: white;
+  font-family: Onest;
 }
 
-.nav_buttons span::after {
+.nav_buttons button::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -95,15 +98,15 @@
   transition: transform 0.2s ease-out;
 }
 
-.nav_buttons span:hover::after {
+.nav_buttons button:hover::after {
   transform: scaleX(1);
 }
 
-.nav_buttons span::after {
+.nav_buttons button::after {
   transform-origin: bottom right;
 }
 
-.nav_buttons span:hover::after {
+.nav_buttons button:hover::after {
   transform-origin: bottom left;
 }
 
