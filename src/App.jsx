@@ -1,20 +1,18 @@
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import Product from './pages/Product/Product';
-import ProductNavbar from './components/productnavbar/ProductNavbar';
-import Footer from './components/footer/Footer';
-
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
+import Home from './pages/Home/Home'
+import Product from './pages/Product/Product'
+import ProductNavbar from './components/productnavbar/ProductNavbar'
+import Footer from './components/footer/Footer'
 
 const Layout = () => {
   return (
-    <article className='product'>
+    <div className="product">
       <ProductNavbar />
       <Outlet />
       <Footer />
-    </article>
+    </div>
   )
 }
-
 
 const router = createBrowserRouter([
   {
@@ -28,15 +26,15 @@ const router = createBrowserRouter([
       {
         path: 'product/:id',
         element: <Product />,
-      }
+      },
     ],
   },
-]);
+])
 
 export default function App() {
   return (
     <>
       <RouterProvider router={router} />
     </>
-  );
+  )
 }
