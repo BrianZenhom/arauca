@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { Filters } from '../../../../components/Filters'
 import ProductTshirts from './../../../../components/ProductTshirts'
 import { useFilters } from '../../../../hooks/useFilters'
+import { Cart } from '../../../../components/Cart'
 
 export default function Products() {
   const [filtersOpen, setFiltersOpen] = useState(false)
@@ -26,6 +27,7 @@ export default function Products() {
         handleCloseFilter={handleCloseFilter}
         filtersOpen={filtersOpen}
       />
+      <Cart />
       <div className="products_fitler-button">
         <button onClick={handleOpenFilters} className="filters_button">
           <PlusSign /> Filtro
