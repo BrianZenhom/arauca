@@ -4,7 +4,7 @@ import tshirtTest5 from '/araucav1model.webp'
 
 export const tshirtCollection = [
   {
-    Id: 1,
+    id: 1,
     img: tshirtTest,
     title: 'Washed sand',
     price: 20,
@@ -12,14 +12,14 @@ export const tshirtCollection = [
   },
 
   {
-    Id: 2,
+    id: 2,
     img: tshirtTest2,
     title: 'Washed dark',
     price: 15,
     category: 'camisetas',
   },
   {
-    Id: 3,
+    id: 3,
     img: tshirtTest5,
     title: 'Washed khaki',
     price: 15,
