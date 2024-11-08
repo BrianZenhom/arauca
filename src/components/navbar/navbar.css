@@ -26,6 +26,10 @@
 
 }
 
+.nav_buttons {
+  position: relative;
+}
+
 .nav_buttons-cta {
   display: flex;
   position: inherit;
@@ -110,6 +114,20 @@
   transform-origin: bottom left;
 }
 
+.nav_buttons-noti {
+  background-color: rgba(255, 0, 0, 0.493);
+  backdrop-filter: blur(20px);
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
 
 
 #invisible {

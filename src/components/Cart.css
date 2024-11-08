@@ -25,7 +25,33 @@
 .cart div {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
+
+}
+
+.cart div button {
+    border: none;
+    color: white;
+    background: var(--blue-light-color);
+    padding: .5rem .9rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    transition: .2s ease-out;
+}
+
+.cart div button:hover {
+    background: var(--blue-color);
+    border: 1px solid rgba(255, 255, 255, 0.247);
+}
+
+.cart span {
+    display: flex;
+    align-items: center;
 }
 
 .cart li footer {
@@ -34,7 +60,7 @@
 }
 
 .cart img {
-    width: 80px;
+    width: 60px;
 }
 
 .open {

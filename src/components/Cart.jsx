@@ -1,3 +1,4 @@
+import { MinusSign, PlusSign } from '../assets/Logocomplete'
 import { useCart } from '../hooks/useCart'
 import './Cart.css'
 import { useId } from 'react'
@@ -18,8 +19,13 @@ export function Cart() {
             <div>
               <strong>Washed sand - 15 €</strong>
               <footer>
-                <small>Cantidad: 1</small>
-                <button>+</button>
+                <button>
+                  <MinusSign />
+                </button>
+                <span>Cantidad: 1</span>
+                <button>
+                  <PlusSign />
+                </button>
               </footer>
             </div>
           </li>

@@ -8,9 +8,9 @@ export default function ProductTshirts({ products }) {
 
   return (
     <div className="products_content container ">
-      {products.map(t => {
+      {products.map(product => {
         return (
-          <div className="products_content-card" key={t.id}>
+          <div className="products_content-card" key={product.id}>
             <div className="products_content-card">
               <div className="img_box">
                 <img
@@ -20,17 +20,17 @@ export default function ProductTshirts({ products }) {
                     aspectRatio: 938 / 1067,
                   }}
                   className="image"
-                  src={t.img}
-                  alt={t.title}
+                  src={product.img}
+                  alt={product.title}
                 />
               </div>
             </div>
             <div className="products_description">
               <div className="products_details">
-                <span className="products_name">{t.title}</span>
-                <span className="products_price">{t.price},00 €</span>
+                <span className="products_name">{product.title}</span>
+                <span className="products_price">{product.price},00 €</span>
               </div>
-              <button onClick={() => addToCart(t)}>
+              <button onClick={() => addToCart(product)}>
                 <PlusSign /> Añadir
               </button>
             </div>

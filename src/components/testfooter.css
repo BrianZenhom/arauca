@@ -1,0 +1,26 @@
+.testfooter {
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    text-align: left;
+
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
+    padding: 8px 24px;
+    border-radius: 32px;
+    opacity: .95;
+    backdrop-filter: blur(10px);
+
+}
+
+.testfooter span {
+    font-size: 14px;
+    color: #09f;
+    opacity: .8;
+
+}
+
+.testfooter h4, .testfooter h5 {
+    margin: 0;
+    display: flex;
+}

@@ -44,6 +44,7 @@ export default function Navbar() {
 
             <div className="nav_buttons">
               <button onClick={handleOpenCart}>Bag</button>
+              <div className="nav_buttons-noti">1</div>
             </div>
           </div>
         </div>
