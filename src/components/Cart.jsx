@@ -5,7 +5,7 @@ import { useId } from 'react'
 
 export function Cart() {
   const cartCheckboxId = useId()
-  const { openCart, setOpenCart } = useCart()
+  const { openCart, setOpenCart, cart, removeFromCart } = useCart()
 
   return (
     <>
@@ -22,8 +22,8 @@ export function Cart() {
                 <button>
                   <MinusSign />
                 </button>
-                <span>Cantidad: 1</span>
-                <button>
+                <span>Cantidad: {cart[0]?.quantity}</span>
+                <button onClick={() => removeFromCart}>
                   <PlusSign />
                 </button>
               </footer>
