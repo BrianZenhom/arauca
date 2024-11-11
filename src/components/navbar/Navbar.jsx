@@ -1,30 +1,13 @@
 import './navbar.css'
 import LogoSVG from './../../assets/Logocomplete'
-import { useState } from 'react'
-import { useEffect } from 'react'
 import { useCart } from '../../hooks/useCart'
+import { useScroll } from '../../hooks/useScroll'
 
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const { openCart, setOpenCart } = useCart()
+  const isScrolled = useScroll()
+  const { openCart, setOpenCart, cart } = useCart()
 
-  const handleScroll = () => {
-    if (window.scrollY > 60) {
-      setIsScrolled(true)
-    } else {
-      setIsScrolled(false)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true })
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
-
-  const handleOpenCart = () => {
+  function handleOpenCart() {
     setOpenCart(!openCart)
   }
 
@@ -41,10 +24,11 @@ export default function Navbar() {
             <div className="nav_buttons">
               <button>Account</button>
             </div>
-
             <div className="nav_buttons">
               <button onClick={handleOpenCart}>Bag</button>
-              <div className="nav_buttons-noti">1</div>
+              {cart[0]?.quantity && (
+                <div className="nav_buttons-noti">{cart[0]?.quantity}</div>
+              )}
             </div>
           </div>
         </div>
