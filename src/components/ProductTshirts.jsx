@@ -1,14 +1,18 @@
-import { PlusSign } from '../assets/Logocomplete'
+import { AddCartIcon, RemoveCartIcon } from '../assets/Icons'
 import { useCart } from '../hooks/useCart'
 
 export default function ProductTshirts({ products }) {
   const { addToCart, cart } = useCart()
 
-  console.log(cart)
+  const checkProductInCart = product => {
+    return cart.some(item => item.id === product.id)
+  }
 
   return (
     <div className="products_content container ">
       {products.map(product => {
+        const isProductInCart = checkProductInCart(product)
+
         return (
           <div className="products_content-card" key={product.id}>
             <div className="products_content-card">
@@ -31,7 +35,7 @@ export default function ProductTshirts({ products }) {
                 <span className="products_price">{product.price},00 €</span>
               </div>
               <button onClick={() => addToCart(product)}>
-                <PlusSign /> Añadir
+                {isProductInCart ? <RemoveCartIcon /> : <AddCartIcon />}
               </button>
             </div>
           </div>

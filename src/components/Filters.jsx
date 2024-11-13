@@ -1,6 +1,6 @@
 import './Filters.css'
 import { useId } from 'react'
-import { CloseIcon } from '../assets/Logocomplete'
+import { CloseIcon } from '../assets/Icons'
 import { useFilters } from '../hooks/useFilters'
 
 export function Filters({ filtersOpen, handleCloseFilter }) {
