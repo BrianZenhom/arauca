@@ -105,10 +105,9 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  gap: 1rem;
   align-items: center;
   max-width: 380px;
+  margin-top: 1rem;
 }
 
 .products_description button {
@@ -119,7 +118,7 @@
   height: max-content;
   font-size: 14px;
   font-family: Onest;
-  width: 100%;
+  width: 35%;
   padding: 8px 16px;
   background: none;
   border: none;

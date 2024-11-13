@@ -1,6 +1,6 @@
 import './products.css'
 import { tshirtCollection } from './../../../../services/tshirts'
-import { PlusSign } from '../../../../assets/Logocomplete'
+import { PlusSign } from '../../../../assets/Icons'
 import { useState } from 'react'
 import { Filters } from '../../../../components/Filters'
 import ProductTshirts from './../../../../components/ProductTshirts'
