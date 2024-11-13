@@ -1,9 +1,8 @@
+import { useCart } from '../hooks/useCart'
 import './testfooter.css'
-import { useContext } from 'react'
-import { FiltersContext } from '../context/filters'
 
 export function TestFooter() {
-  const { filters } = useContext(FiltersContext)
+  const { cart } = useCart()
 
-  return <footer className="testfooter">{JSON.stringify(filters)}</footer>
+  return <footer className="testfooter">{JSON.stringify(cart, null, 2)}</footer>
 }
