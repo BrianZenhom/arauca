@@ -38,6 +38,12 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Onest;
+  src: url(./assets/fonts/onest-latin-400-normal.woff);
+  font-weight: 400;
+}
+
 h1 {
   font-size: clamp(32px, 4vw, 64px) !important;
 }

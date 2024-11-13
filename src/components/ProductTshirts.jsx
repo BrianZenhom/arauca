@@ -2,7 +2,7 @@ import { AddCartIcon, RemoveCartIcon } from '../assets/Icons'
 import { useCart } from '../hooks/useCart'
 
 export default function ProductTshirts({ products }) {
-  const { addToCart, cart } = useCart()
+  const { addToCart, cart, removeFromCart } = useCart()
 
   const checkProductInCart = product => {
     return cart.some(item => item.id === product.id)
@@ -34,7 +34,14 @@ export default function ProductTshirts({ products }) {
                 <span className="products_name">{product.title}</span>
                 <span className="products_price">{product.price},00 €</span>
               </div>
-              <button onClick={() => addToCart(product)}>
+              <button
+                style={{
+                  backgroundColor: isProductInCart ? 'crimson' : '',
+                }}
+                onClick={() =>
+                  isProductInCart ? removeFromCart(product) : addToCart(product)
+                }
+              >
                 {isProductInCart ? <RemoveCartIcon /> : <AddCartIcon />}
               </button>
             </div>
