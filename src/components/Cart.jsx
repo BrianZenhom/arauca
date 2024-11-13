@@ -1,11 +1,11 @@
-import { MinusSign, PlusSign } from '../assets/Logocomplete'
-import { useCart } from '../hooks/useCart'
 import './Cart.css'
 import { useId } from 'react'
+import { useCart } from '../hooks/useCart'
+import { CloseIcon, MinusSign, PlusSign } from '../assets/Icons'
 
 export function Cart() {
   const cartCheckboxId = useId()
-  const { openCart, setOpenCart, cart, removeFromCart } = useCart()
+  const { openCart, setOpenCart, cart } = useCart()
 
   return (
     <>
@@ -13,17 +13,19 @@ export function Cart() {
 
       <aside className={`cart ${openCart ? 'open' : ''}`}>
         <ul>
-          <button onClick={() => setOpenCart(false)}>X</button>
+          <button className="cart_close-btn" onClick={() => setOpenCart(false)}>
+            <CloseIcon />
+          </button>
           <li>
             <img src="/araucav1.webp" alt="washed" />
             <div>
-              <strong>Washed sand - 15 €</strong>
+              <strong>Washed sand - {cart[0]?.price} €</strong>
               <footer>
                 <button>
                   <MinusSign />
                 </button>
                 <span>Cantidad: {cart[0]?.quantity}</span>
-                <button onClick={() => removeFromCart}>
+                <button>
                   <PlusSign />
                 </button>
               </footer>
