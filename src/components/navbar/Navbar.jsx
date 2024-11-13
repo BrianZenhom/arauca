@@ -1,5 +1,5 @@
 import './navbar.css'
-import LogoSVG from './../../assets/Logocomplete'
+import LogoSVG from './../../assets/Icons.jsx'
 import { useCart } from '../../hooks/useCart'
 import { useScroll } from '../../hooks/useScroll'
 
