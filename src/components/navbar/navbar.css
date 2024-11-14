@@ -115,10 +115,8 @@
 }
 
 .nav_buttons-noti {
-  background-color: rgba(255, 0, 0, 0.493);
-  backdrop-filter: blur(20px);
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   position: absolute;
   top: 0px;
   right: -5px;
@@ -127,8 +125,10 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
+  background-color: rgba(0, 0, 0, 0.637);
+  opacity: .95;
+  backdrop-filter: blur(10px);
 }
-
 
 #invisible {
   opacity: 0;

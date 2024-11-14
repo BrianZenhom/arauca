@@ -7,8 +7,6 @@ export function Cart() {
   const cartCheckboxId = useId()
   const { openCart, setOpenCart, cart } = useCart()
 
-  console.log(cart)
-
   return (
     <>
       <input id={cartCheckboxId} type="checkbox" hidden />
