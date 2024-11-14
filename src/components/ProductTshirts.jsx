@@ -37,6 +37,7 @@ export default function ProductTshirts({ products }) {
               <button
                 style={{
                   backgroundColor: isProductInCart ? 'crimson' : '',
+                  transition: '.2s ease-in-out',
                 }}
                 onClick={() =>
                   isProductInCart ? removeFromCart(product) : addToCart(product)
