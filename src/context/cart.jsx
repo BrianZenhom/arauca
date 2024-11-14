@@ -15,6 +15,8 @@ export function CartProvider({ children }) {
       return setCart(newCart)
     }
 
+    setOpenCart(true)
+
     setCart(prevState => [
       ...prevState,
       {

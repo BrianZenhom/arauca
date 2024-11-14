@@ -135,24 +135,27 @@
   border: 1px solid rgba(255, 255, 255, 0.247);
 }
 
-img {
+.image img {
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.164);
+
 }
 
 
 .image {
-  object-fit: cover;
+  object-fit: scale-down;
   border-radius: 8px;
   cursor: pointer;
   max-width: 380px;
   max-height: 480px;
+  aspect-ratio: 687 / 917 !important;
 }
 
 .img_box {
   max-width: 420px;
   position: relative;
   border-radius: 8px;
+
 }
 
 .buttonProduct {
