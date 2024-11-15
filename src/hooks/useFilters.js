@@ -2,7 +2,14 @@ import { useContext } from 'react'
 import { FiltersContext } from './../context/filters'
 
 export function useFilters() {
-  const { filters, setFilters } = useContext(FiltersContext)
+  const {
+    filters,
+    setFilters,
+    handleOpenFilters,
+    setFiltersOpen,
+    filtersOpen,
+    handleCloseFilter,
+  } = useContext(FiltersContext)
 
   const filterProducts = products => {
     return products.filter(product => {
@@ -13,5 +20,13 @@ export function useFilters() {
     })
   }
 
-  return { filters, filterProducts, setFilters }
+  return {
+    filters,
+    filterProducts,
+    setFilters,
+    handleOpenFilters,
+    setFiltersOpen,
+    filtersOpen,
+    handleCloseFilter,
+  }
 }

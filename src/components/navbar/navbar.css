@@ -119,15 +119,16 @@
   height: 25px;
   position: absolute;
   top: 0px;
-  right: -5px;
+  right: -15px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.637);
+  background-color: rgba(0, 102, 255, 0.637);
   opacity: .95;
   backdrop-filter: blur(10px);
+  user-select: none;
 }
 
 #invisible {

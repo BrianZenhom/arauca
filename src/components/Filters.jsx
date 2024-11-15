@@ -3,8 +3,8 @@ import { useId } from 'react'
 import { CloseIcon } from '../assets/Icons'
 import { useFilters } from '../hooks/useFilters'
 
-export function Filters({ filtersOpen, handleCloseFilter }) {
-  const { filters, setFilters } = useFilters()
+export function Filters() {
+  const { filters, setFilters, filtersOpen, handleCloseFilter } = useFilters()
 
   const minPriceFilterId = useId()
   const categoryFilterId = useId()
