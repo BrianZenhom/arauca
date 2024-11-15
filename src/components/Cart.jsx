@@ -9,21 +9,29 @@ export function Cart() {
     <>
       <aside className={`cart ${openCart ? 'open' : ''}`}>
         <ul>
-          <button className="cart_close-btn" onClick={() => setOpenCart(false)}>
-            <CloseIcon />
-          </button>
+          <header className="cart_header">
+            <strong>CART</strong>
+            <button onClick={() => setOpenCart(false)}>
+              <CloseIcon />
+            </button>
+          </header>
           {cart.map(item => {
-            console.log(item)
             return (
               <li key={item.id}>
                 <img src={item.img} alt="washed" />
                 <div>
-                  <strong>Washed sand - {item.price}€</strong>
-                  <footer>
+                  <div className="cart_details">
+                    <strong>
+                      {item.title} - {item.price}€
+                    </strong>
+                    <small>Size: L</small>
+                    <small>Color: Sand</small>
+                  </div>
+                  <footer className="cart_mixed-button">
                     <button>
                       <MinusSign />
                     </button>
-                    <span>Cantidad: {item.quantity}</span>
+                    <span>{item.quantity}</span>
                     <button>
                       <PlusSign />
                     </button>
