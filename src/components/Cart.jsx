@@ -1,16 +1,12 @@
 import './Cart.css'
-import { useId } from 'react'
 import { useCart } from '../hooks/useCart'
 import { CloseIcon, MinusSign, PlusSign } from '../assets/Icons'
 
 export function Cart() {
-  const cartCheckboxId = useId()
   const { openCart, setOpenCart, cart } = useCart()
 
   return (
     <>
-      <input id={cartCheckboxId} type="checkbox" hidden />
-
       <aside className={`cart ${openCart ? 'open' : ''}`}>
         <ul>
           <button className="cart_close-btn" onClick={() => setOpenCart(false)}>
@@ -22,7 +18,7 @@ export function Cart() {
               <li key={item.id}>
                 <img src={item.img} alt="washed" />
                 <div>
-                  <strong>Washed sand - {item.price} €</strong>
+                  <strong>Washed sand - {item.price}€</strong>
                   <footer>
                     <button>
                       <MinusSign />
