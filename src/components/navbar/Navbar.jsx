@@ -26,8 +26,10 @@ export default function Navbar() {
             </div>
             <div className="nav_buttons">
               <button onClick={handleOpenCart}>Bag</button>
-              {cart[0]?.quantity && (
-                <div className="nav_buttons-noti">{cart.length}</div>
+              {cart.length > 0 && (
+                <div className="nav_buttons-noti">
+                  {cart.map(q => q.quantity)}
+                </div>
               )}
             </div>
           </div>
