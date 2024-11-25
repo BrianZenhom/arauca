@@ -1,8 +1,7 @@
 .faqs_section {
   min-height: 100vh;
   background-color: var(--primary-color);
-  padding-bottom: 3rem;
-  padding-top: 3rem;
+  padding: 7rem 1rem 7rem 1rem;
 }
 
 .faqs_content {
