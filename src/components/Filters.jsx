@@ -2,6 +2,7 @@ import './Filters.css'
 import { useId } from 'react'
 import { CloseIcon } from '../assets/Icons'
 import { useFilters } from '../hooks/useFilters'
+import { createPortal } from 'react-dom'
 
 export function Filters() {
   const { filters, setFilters, filtersOpen, handleCloseFilter } = useFilters()
@@ -23,7 +24,7 @@ export function Filters() {
     }))
   }
 
-  return (
+  return createPortal(
     <dialog open className={filtersOpen ? 'filters show' : 'filters'}>
       <div
         className={filtersOpen ? `filter_selectors open` : 'filter_selectors'}
@@ -53,6 +54,7 @@ export function Filters() {
           </select>
         </div>
       </div>
-    </dialog>
+    </dialog>,
+    document.body
   )
 }
