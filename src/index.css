@@ -44,6 +44,18 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: Onest;
+  src: url(./assets/fonts/onest-latin-600-normal.woff2);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Onest;
+  src: url(./assets/fonts/onest-latin-700-normal.woff2);
+  font-weight: 700;
+}
+
 h1 {
   font-size: clamp(32px, 4vw, 64px) !important;
 }

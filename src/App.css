@@ -16,6 +16,7 @@
 
 body {
   overflow-x: hidden;
+  font-family: Onest;
 }
 
 ::-webkit-scrollbar-thumb {
