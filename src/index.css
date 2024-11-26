@@ -58,25 +58,30 @@
 
 h1 {
   font-size: clamp(32px, 4vw, 64px) !important;
+  font-family: Onest;
 }
 
 h2 {
   font-size: clamp(21px, 4vw, 32px) !important;
+  font-family: Onest;
 }
 
 h3 {
   font-size: clamp(14px, 4vw, 21px) !important;
+  font-family: Onest;
 }
 
 span {
   font-size: clamp(12px, 2vw, 14px);
   text-wrap: balance;
+  font-family: Onest;
 }
 
 p {
   margin-bottom: 0.5rem;
   font-size: clamp(12px, 2vw, 16px);
   text-wrap: pretty;
+  font-family: Onest;
 }
 
 b {
@@ -89,4 +94,5 @@ html {
   scroll-behavior: smooth;
   font-family: Onest, system-ui, sans-serif;
   overflow-x: hidden;
+  font-family: Onest;
 }
